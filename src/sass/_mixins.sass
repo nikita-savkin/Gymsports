@@ -1,0 +1,12 @@
+%flex-center
+  display: flex
+  justify-content: center
+  align-items: center
+
+// @mixin media($_size) 
+//     @media (min-width: $_size) 
+//         @content
+
+@mixin media($_size) 
+    @media (max-width: $_size) 
+        @content
