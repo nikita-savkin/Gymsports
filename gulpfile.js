@@ -64,6 +64,12 @@ function html() {
     .pipe(browsersync.stream());
 }
 
+// JS
+function js() {
+  return src(path.src.js)
+    .pipe(dest(path.build.js))
+}
+
 // Редактируем картинки (сначала конверт в webp, потом выгрузка, потом сжатие, потом снова выгрузка(jpg тоже останется))
 function images() {
   return src(path.src.img)
@@ -91,6 +97,7 @@ function watchFiles(params) {
   gulp.watch([path.watch.html], html);
   gulp.watch([path.watch.css], css);
   gulp.watch([path.watch.img], images);
+  gulp.watch([path.watch.js], js);
 }
 
 // Функция очистки папки
@@ -149,9 +156,10 @@ function css() {
     .pipe(browsersync.stream());
 }
 
-let build = gulp.parallel(css, html, images); // генерируем sass в css и добавляем новые файлы
+let build = gulp.parallel(css, html, images, js); // генерируем sass в css и добавляем новые файлы
 let watch = gulp.parallel(build, watchFiles, browserSync); // сценарий выполнения функций
 
+exports.js = js;
 exports.fonts = fonts;
 exports.images = images;
 exports.css = css;
