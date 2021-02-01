@@ -58,16 +58,19 @@ function browserSync(params) {
 // Создаем функцию для записи данных в src для копирования в build
 function html() {
   return src(path.src.html)
-    .pipe(fileinclude()) // подключение файлов
-    .pipe(webpHtml())
-    .pipe(dest(path.build.html)) // через pipe пишем команды для Gulp, пишем путь к папке результата
+    .pipe(fileinclude({
+      prefix: '@@',
+      basepath: '@file'
+    })) 
+    // .pipe(webpHtml())
+    .pipe(dest(path.build.html))
     .pipe(browsersync.stream());
 }
 
 // JS
 function js() {
   return src(path.src.js)
-    .pipe(dest(path.build.js))
+    .pipe(dest(path.build.js));
 }
 
 // Редактируем картинки (сначала конверт в webp, потом выгрузка, потом сжатие, потом снова выгрузка(jpg тоже останется))
@@ -156,7 +159,7 @@ function css() {
     .pipe(browsersync.stream());
 }
 
-let build = gulp.parallel(css, html, images, js); // генерируем sass в css и добавляем новые файлы
+let build = gulp.series(clean, gulp.parallel(css, html, images, js)); // генерируем sass в css и добавляем новые файлы
 let watch = gulp.parallel(build, watchFiles, browserSync); // сценарий выполнения функций
 
 exports.js = js;
@@ -164,6 +167,7 @@ exports.fonts = fonts;
 exports.images = images;
 exports.css = css;
 exports.html = html;
+exports.clean = clean;
 exports.build = build;
 exports.default = watch;
 

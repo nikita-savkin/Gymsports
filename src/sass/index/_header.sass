@@ -1,4 +1,5 @@
 .header
+  margin-bottom: 20px
   &__top
     background-color: $dark
     &-inner
@@ -10,14 +11,14 @@
   &__phone
     display: flex
     align-items: center
-    max-width: 130px
+    max-width: 150px
     &-icon
       margin-right: 10px 
       width: 18px
       height: 18px
       fill: #fff
   &__number
-    font-size: 12px
+    font-size: 14px
     color: #fff 
     transition: 0.3s
     &:hover 
@@ -48,7 +49,6 @@
       display: flex
       align-items: center
       justify-content: space-between
-      min-width: 800px
   &__button-link 
     border: 1px solid transparent
     &:hover 
@@ -72,18 +72,29 @@
           transform: rotate(90deg)
           background-image: url("data:image/svg+xml,%3Csvg fill='%2372D0F4' version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 512.002 512.002' style='enable-background:new 0 0 512.002 512.002;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath d='M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105 L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883,3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795 l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A")
   &__nav-hover
-    position: relative    
+    position: relative  
+    &:hover .header__submenu
+      display: block
   &__submenu
     display: none
     position: absolute
     width: 200px
     min-height: 110px
     padding: 5px
+    top: 50px
+    left: 2px
     border-radius: 5px
-    top: 43px
     background-color: #fff
+    z-index: 100 
     &-navbar
       position: relative
+      &::after
+        position: absolute
+        content: ''
+        top: -20px
+        left: -5px
+        width: 200px
+        height: 20px
       &::before
         position: absolute
         content: ''
