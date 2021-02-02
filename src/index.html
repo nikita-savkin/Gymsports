@@ -72,7 +72,19 @@
     </section>
     <section class="main__classes-and-prices">
       <div class="container">
-        @@include('_all-classes.html')
+        <div class="main__classes-and-prices-wrapper">
+          @@include('_all-classes.html')
+          @@include('_prices.html')
+        </div>
+      </div>
+    </section>
+    <section class="main__info">
+      <div class="container">
+        <div class="main__info-wrapper">
+          @@include('_trainers.html')
+          @@include('_events.html')
+
+        </div>
       </div>
     </section>
   </main>

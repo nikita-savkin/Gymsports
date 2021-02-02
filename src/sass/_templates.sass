@@ -44,15 +44,13 @@
 .all-classes
   max-width: 770px
   &__title 
-    font-family: $font-condested
-    text-align: center
-    font-size: 30px 
-    font-weight: 300
+    @extend %main-title
     color: $title-color
     margin-bottom: 25px
+    text-align: center
   &__block
     min-height: 250px
-    padding: 18px 32px
+    padding: 16px 32px
     background-color: $light
   &__list 
     display: flex
@@ -64,7 +62,7 @@
     align-items: start
     width: 326px
     min-height: 34px
-    margin-bottom: 29px
+    margin-bottom: 27px
     border-bottom: 1px solid rgba(#fff, 0.6)
     background-color: $light
     color: #fff
@@ -127,6 +125,140 @@
       &:hover 
         &:before
           content: "Share"
+
+.prices
+  max-width: 370px
+  &__title 
+    text-align: center
+    @extend %main-title
+    color: $title-color
+    margin-bottom: 25px
+    span  
+      font-style: italic
+  &__block 
+    min-height: 250px 
+    padding: 53px 30px 30px
+    color: #fff   
+    background-color: $dark   
+    text-align: center
+    &-title 
+      font-size: 18px 
+      text-transform: uppercase
+      margin-bottom: 22px 
+    &-subtitle 
+      max-width: 250px 
+      font-size: 16px 
+      line-height: 24px
+      margin: 0 auto 24px
+
+.trainers 
+  max-width: 370px 
+  &__title 
+    @extend %main-title
+    margin-bottom: 25px 
+    text-align: center
+  &__block 
+    @extend %flex-between
+    min-height: 250px 
+    padding: 30px 30px 25px
+    background-color: #fff
+    hr 
+      width: 1px
+      height: 180px
+      border: none
+      background-color: #a9ddf1
+  &__trainer 
+    width: 128px
+    min-height: 128px
+    text-align: center
+  &__img 
+    display: block
+    width: 80px 
+    height: 80px
+    border-radius: 50%
+    object-fit: cover
+    margin: 0 auto 10px 
+  &__name 
+    font-size: 14px
+    font-weight: 600 
+    text-transform: uppercase
+    color: $light 
+  &__spec 
+    font-size: 12px 
+    font-style: italic
+    text-transform: uppercase
+    color: $light   
+    margin-bottom: 10px 
+  &__info 
+    font-size: 12px 
+    font-style: italic
+    color: #606060
+    margin-bottom: 12px 
+  &__icons 
+    display: flex
+  &__twitter-link 
+    display: block
+    margin-left: auto
+  &__icon 
+    width: 18px 
+    height: 18px
+    cursor: pointer
+    &-twitter, &-facebook 
+      fill: $light
+    &-like, &-thumb
+      fill: #b8b8b8
+    &-like 
+      margin-right: 3px
+
+.events 
+  max-width: 370px 
+  &__title 
+    @extend %main-title
+    text-align: center
+    margin-bottom: 25px 
+  &__block 
+    padding: 20px 28px
+    background-color: $light
+  &__event 
+    display: flex
+    justify-content: space-between
+  &__date
+    max-width: 120px 
+    &-text 
+      font-size: 16px 
+      font-weight: 600
+      text-transform: uppercase
+      color: #fff
+      margin-bottom: 5px
+  &__info 
+    text-align: center
+    max-width: 160px 
+  &__time 
+    font-size: 12px 
+    font-weight: 600
+    color: #fe0000
+    margin-bottom: 5px
+  &__name 
+    font-size: 18px 
+    text-transform: uppercase
+    color: #292929
+    margin-bottom: 2px  
+  &__text 
+    font-size: 12px 
+    margin-bottom: 7px
+  &__btn 
+    display: inline-block
+    padding: 6px 20px 
+    font-size: 10px
+    text-transform: uppercase
+    color: #fe0000
+    border: 1px solid #000 
+    border-radius: 3px
+
+
+
+
+  
 
 
 
