@@ -16,6 +16,7 @@ let path = {
     css: source_folder + "/sass/style.sass",
     js: source_folder + "/js/script.js",
     img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
+    icons: source_folder + "/img/icons/",
     fonts: source_folder + "/fonts/*.ttf",
   },
   watch: {
@@ -62,7 +63,7 @@ function html() {
       prefix: '@@',
       basepath: '@file'
     })) 
-    // .pipe(webpHtml())
+    .pipe(webpHtml())
     .pipe(dest(path.build.html))
     .pipe(browsersync.stream());
 }
@@ -123,12 +124,12 @@ gulp.task('svgSprite', function() {
     .pipe(svgSprite({
       mode: {
         stack: {
-          sprite: "../icons/icons.svg",
+          sprite: "../icons.svg",
           example: true
         }
       }
     }))
-    .pipe(dest(path.build.img));
+    .pipe(dest(path.src.icons));
 });
 
 // Генерируем sass в css

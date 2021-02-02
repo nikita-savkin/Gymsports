@@ -41,4 +41,96 @@
     object-fit: cover
     object-position: top
 
-      
+.all-classes
+  max-width: 770px
+  &__title 
+    font-family: $font-condested
+    text-align: center
+    font-size: 30px 
+    font-weight: 300
+    color: $title-color
+    margin-bottom: 25px
+  &__block
+    min-height: 250px
+    padding: 18px 32px
+    background-color: $light
+  &__list 
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  &__class 
+    display: flex
+    justify-content: space-between
+    align-items: start
+    width: 326px
+    min-height: 34px
+    margin-bottom: 29px
+    border-bottom: 1px solid rgba(#fff, 0.6)
+    background-color: $light
+    color: #fff
+    &:nth-child(7), &:nth-child(8)
+      margin-bottom: 0px
+  &__name 
+    display: flex
+    align-items: center
+  &__text 
+    font-size: 14px
+    text-transform: uppercase
+  &__links 
+    min-width: 120px
+    @extend %flex-between
+  &__link-icon 
+    width: 15px
+    height: 15px
+    fill: #fff
+    &:hover 
+      fill: $hover-color
+  &__clock-icon 
+    margin-right: 7px
+    &:hover 
+      fill: #fff
+  &__link
+    position: relative
+    &:hover 
+      &:before
+        position: absolute 
+        @extend %flex-center
+        content: "Timetible"
+        width: 106px
+        height: 30px
+        top: -40px
+        left: -15px
+        font-family: $font-condested
+        font-size: 13px
+        font-weight: 300
+        text-transform: uppercase
+        color: $light
+        background-color: #fff
+      &:after 
+        position: absolute 
+        content: ''
+        top: -15px
+        left: 0px
+        width: 10px
+        height: 10px
+        border: 8px solid transparent 
+        border-top: 10px solid #fff
+    &-calendar
+      &:hover 
+        &:before
+          content: "Send to"
+    &-like
+      &:hover 
+        &:before
+          content: "Like it"
+    &-arrow
+      &:hover 
+        &:before
+          content: "Share"
+
+
+
+
+
+  
+
