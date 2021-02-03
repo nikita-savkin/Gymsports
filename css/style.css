@@ -14,7 +14,8 @@
 .trainers__block,
 .main__classes-and-prices-wrapper,
 .main__info-wrapper,
-.gallery-partner__wrapper {
+.gallery-partner__wrapper,
+.footer-bottom__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -653,16 +654,6 @@ img {
   color: #2B0DDE;
 }
 
-.header__links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  min-width: 200px;
-}
-
 .header__link-icon {
   width: 18px;
   height: 18px;
@@ -692,10 +683,6 @@ img {
           justify-content: space-between;
   min-height: 100px;
   padding: 0px 50px 0px 10px;
-}
-
-.header__logo {
-  min-width: 135px;
 }
 
 .header__navbar-list {
@@ -830,6 +817,21 @@ img {
 
 .header__submenu-nav-link:hover:before {
   background-image: url("data:image/svg+xml,%3Csvg fill='%23fff' version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 512.002 512.002' style='enable-background:new 0 0 512.002 512.002;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath d='M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105 L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883,3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795 l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
+}
+
+.logo {
+  display: block;
+  width: 128px;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-width: 200px;
 }
 
 .main {
@@ -995,6 +997,137 @@ img {
 
 .comment__link {
   color: #2B0DDE;
+}
+
+.footer-top {
+  background-color: #72D0F4;
+}
+
+.footer-top__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 45px 25px 57px;
+}
+
+.footer__signup {
+  width: 340px;
+  margin-right: 60px;
+}
+
+.footer__signup-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.footer__signup-subtitle {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer__input {
+  width: 100%;
+  padding: 6px 20px;
+  font-size: 12px;
+  color: #72D0F4;
+  opacity: 0.5;
+  margin-bottom: 13px;
+}
+
+.footer__btn {
+  width: 212px;
+  padding: 8px 20px;
+  border: none;
+  font-size: 12px;
+  text-align: start;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #e25050;
+}
+
+.footer__logo {
+  margin-bottom: 22px;
+  margin: 0 auto 15px;
+}
+
+.footer__contacts {
+  max-width: 360px;
+  margin-right: 60px;
+}
+
+.footer__contacts-text {
+  font-size: 13px;
+  line-height: 23px;
+  color: #fff;
+  margin-bottom: 27px;
+}
+
+.footer__phone,
+.footer__email {
+  font-size: 13px;
+  color: #fff;
+  margin-bottom: 14px;
+}
+
+.footer__phone-link,
+.footer__email-link {
+  font-size: 20px;
+  font-style: italic;
+  padding-left: 10px;
+  color: #fff;
+}
+
+.footer__menu-title,
+.footer__community-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 27px;
+}
+
+.footer__menu-list,
+.footer__community-list {
+  padding-left: 5px;
+}
+
+.footer__menu-link,
+.footer__community-link {
+  font-size: 13px;
+  color: #fff;
+}
+
+.footer__community {
+  margin-left: auto;
+}
+
+.footer-bottom {
+  background-color: #00BFF0;
+}
+
+.footer-bottom__wrapper {
+  padding: 15px 25px;
+}
+
+.footer__copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  color: #fff;
+}
+
+.footer__copyright-icon {
+  width: 13px;
+  height: 13px;
+  fill: #fff;
+  margin-right: 5px;
 }
 
 .display-block {
