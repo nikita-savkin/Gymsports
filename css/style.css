@@ -969,6 +969,34 @@ img {
      object-fit: contain;
 }
 
+.comment__wrapper {
+  max-width: 790px;
+  min-height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.comment__icon {
+  width: 100px;
+  height: 100px;
+  margin-right: 40px;
+  fill: #72D0F4;
+}
+
+.comment__text {
+  font-size: 14px;
+  color: #00BFF0;
+}
+
+.comment__link {
+  color: #2B0DDE;
+}
+
 .display-block {
   display: block;
 }
