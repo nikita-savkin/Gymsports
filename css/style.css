@@ -28,7 +28,8 @@
 .all-classes__title,
 .prices__title,
 .trainers__title,
-.events__title {
+.events__title,
+.from-blog__title {
   font-family: "Open Sans Condensed";
   font-size: 30px;
   font-weight: 300;
@@ -329,7 +330,7 @@ img {
 }
 
 .trainers {
-  max-width: 370px;
+  width: 370px;
 }
 
 .trainers__title {
@@ -429,6 +430,7 @@ img {
 }
 
 .events__block {
+  min-height: 250px;
   padding: 20px 28px;
   background-color: #72D0F4;
 }
@@ -444,6 +446,7 @@ img {
 
 .events__date {
   max-width: 120px;
+  margin-right: 20px;
 }
 
 .events__date-text {
@@ -451,41 +454,98 @@ img {
   font-weight: 600;
   text-transform: uppercase;
   color: #fff;
-  margin-bottom: 5px;
+}
+
+.events__img {
+  width: 120px;
+  height: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .events__info {
   text-align: center;
-  max-width: 160px;
 }
 
 .events__time {
   font-size: 12px;
   font-weight: 600;
   color: #fe0000;
-  margin-bottom: 5px;
 }
 
 .events__name {
   font-size: 18px;
   text-transform: uppercase;
   color: #292929;
-  margin-bottom: 2px;
 }
 
 .events__text {
   font-size: 12px;
-  margin-bottom: 7px;
+  margin-bottom: 4px;
 }
 
 .events__btn {
   display: inline-block;
-  padding: 6px 20px;
+  padding: 3px 20px;
   font-size: 10px;
   text-transform: uppercase;
   color: #fe0000;
   border: 1px solid #000;
   border-radius: 3px;
+}
+
+.events__divide {
+  margin: 7px auto;
+  border: none;
+  height: 1px;
+  width: 280px;
+  background-color: #fff;
+}
+
+.from-blog {
+  width: 370px;
+}
+
+.from-blog__title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.from-blog__block {
+  min-height: 250px;
+  padding: 12px 20px;
+  background-color: #d4d6d6;
+}
+
+.from-blog__event {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 70px;
+  margin-bottom: 9px;
+}
+
+.from-blog__event:last-child {
+  margin-bottom: 0;
+}
+
+.from-blog__img {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+  background-color: #fff;
+}
+
+.from-blog__text {
+  font-size: 13px;
+  color: #fff;
+  margin-bottom: 3px;
+}
+
+.from-blog__date {
+  font-size: 13px;
+  color: #000;
 }
 
 .upperheader {
@@ -831,6 +891,10 @@ img {
 }
 
 .main__classes-and-prices {
+  margin-bottom: 84px;
+}
+
+.main__info {
   margin-bottom: 84px;
 }
 
