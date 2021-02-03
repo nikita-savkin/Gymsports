@@ -152,7 +152,7 @@
       margin: 0 auto 24px
 
 .trainers 
-  max-width: 370px 
+  width: 370px 
   &__title 
     @extend %main-title
     margin-bottom: 25px 
@@ -217,6 +217,7 @@
     text-align: center
     margin-bottom: 25px 
   &__block 
+    min-height: 250px
     padding: 20px 28px
     background-color: $light
   &__event 
@@ -224,38 +225,74 @@
     justify-content: space-between
   &__date
     max-width: 120px 
+    margin-right: 20px
     &-text 
       font-size: 16px 
       font-weight: 600
       text-transform: uppercase
       color: #fff
-      margin-bottom: 5px
+  &__img 
+    width: 120px
+    height: 70px
+    object-fit: cover
   &__info 
     text-align: center
-    max-width: 160px 
   &__time 
     font-size: 12px 
     font-weight: 600
     color: #fe0000
-    margin-bottom: 5px
   &__name 
     font-size: 18px 
     text-transform: uppercase
     color: #292929
-    margin-bottom: 2px  
   &__text 
     font-size: 12px 
-    margin-bottom: 7px
+    margin-bottom: 4px
   &__btn 
     display: inline-block
-    padding: 6px 20px 
+    padding: 3px 20px 
     font-size: 10px
     text-transform: uppercase
     color: #fe0000
     border: 1px solid #000 
     border-radius: 3px
+  &__divide 
+    margin: 7px auto
+    border: none
+    height: 1px
+    width: 280px 
+    background-color: #fff
 
-
+.from-blog 
+  width: 370px 
+  &__title 
+    @extend %main-title 
+    text-align: center
+    margin-bottom: 25px 
+  &__block 
+    min-height: 250px 
+    padding: 12px 20px 
+    background-color: #d4d6d6
+  &__event 
+    display: flex
+    min-height: 70px
+    margin-bottom: 9px
+    &:last-child
+      margin-bottom: 0
+  &__img 
+    display: inline-block
+    width: 70px
+    height: 70px
+    margin-right: 20px
+    background-color: #fff 
+  &__text 
+    font-size: 13px 
+    color: #fff 
+    margin-bottom: 3px
+  &__date 
+    font-size: 13px 
+    color: #000
+    
 
 
   
