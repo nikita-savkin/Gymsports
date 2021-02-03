@@ -1,0 +1,40 @@
+.gallery-partner
+  background-color: #e6e6e6
+  &__wrapper
+    @extend %flex-between
+    padding: 37px 0 74px
+  &__gallery
+    width: 770px
+    &-title 
+      @extend %main-title 
+      text-align: center
+      margin-bottom: 25px 
+    &__carousel 
+      min-height: 345px
+      &-content 
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+  &__partner 
+    width: 256px
+    margin-right: 63px
+    &-title
+      @extend %main-title 
+      text-align: center
+      margin-bottom: 50px
+  &__partners 
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    min-height: 290px
+
+.carousel-img 
+  width: 253px
+  height: 170px
+  object-fit: cover
+
+.partners-img 
+  width: 115px
+  height: 95px
+  object-fit: contain
+

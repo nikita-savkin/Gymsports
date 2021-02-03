@@ -13,7 +13,8 @@
 .all-classes__links,
 .trainers__block,
 .main__classes-and-prices-wrapper,
-.main__info-wrapper {
+.main__info-wrapper,
+.gallery-partner__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,7 +30,9 @@
 .prices__title,
 .trainers__title,
 .events__title,
-.from-blog__title {
+.from-blog__title,
+.gallery-partner__gallery-title,
+.gallery-partner__partner-title {
   font-family: "Open Sans Condensed";
   font-size: 30px;
   font-weight: 300;
@@ -896,6 +899,74 @@ img {
 
 .main__info {
   margin-bottom: 84px;
+}
+
+.gallery-partner {
+  background-color: #e6e6e6;
+}
+
+.gallery-partner__wrapper {
+  padding: 37px 0 74px;
+}
+
+.gallery-partner__gallery {
+  width: 770px;
+}
+
+.gallery-partner__gallery-title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.gallery-partner__gallery__carousel {
+  min-height: 345px;
+}
+
+.gallery-partner__gallery__carousel-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gallery-partner__partner {
+  width: 256px;
+  margin-right: 63px;
+}
+
+.gallery-partner__partner-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.gallery-partner__partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 290px;
+}
+
+.carousel-img {
+  width: 253px;
+  height: 170px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.partners-img {
+  width: 115px;
+  height: 95px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .display-block {
