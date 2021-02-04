@@ -973,7 +973,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0px 90px;
+  padding: 20px 90px 0;
 }
 
 .main__title-image {
