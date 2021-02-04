@@ -15,7 +15,8 @@
 .main__classes-and-prices-wrapper,
 .main__info-wrapper,
 .gallery-partner__wrapper,
-.footer-bottom__wrapper {
+.footer-bottom__wrapper,
+.trainer-bigtitle__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,7 +34,8 @@
 .events__title,
 .from-blog__title,
 .gallery-partner__gallery-title,
-.gallery-partner__partner-title {
+.gallery-partner__partner-title,
+.our-trainers__title {
   font-family: "Open Sans Condensed";
   font-size: 30px;
   font-weight: 300;
@@ -552,6 +554,27 @@ img {
   color: #000;
 }
 
+.underheader-bg {
+  min-height: 300px;
+  position: relative;
+  background: url(/img/about/about-us_bg.jpg) no-repeat;
+  background-size: cover;
+  border-bottom: 10px solid #00BFF0;
+}
+
+.underheader-bg:before {
+  position: absolute;
+  content: 'About us';
+  bottom: 0;
+  left: 170px;
+  font-size: 30px;
+  font-weight: 300;
+  padding: 8px 40px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #00BFF0;
+}
+
 .upperheader {
   min-height: 800px;
   background: url(../img/index/upperheader_bg.jpg) no-repeat;
@@ -601,10 +624,6 @@ img {
   text-align: center;
   max-width: 145px;
   margin: 0 auto;
-}
-
-.header {
-  margin-bottom: 20px;
 }
 
 .header__top {
@@ -1128,6 +1147,134 @@ img {
   height: 13px;
   fill: #fff;
   margin-right: 5px;
+}
+
+.trainer-bigtitle {
+  background-color: #00BFF0;
+}
+
+.trainer-bigtitle__wrapper {
+  padding: 70px 100px;
+}
+
+.trainer-bigtitle__img {
+  width: 370px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.trainer-bigtitle__info {
+  width: 500px;
+  text-align: center;
+  color: #fff;
+}
+
+.trainer-bigtitle__title {
+  font-size: 38px;
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+
+.trainer-bigtitle__subtitle {
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+
+.trainer-bigtitle__name {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.trainer-bigtitle__name span {
+  font-style: italic;
+  font-weight: 300;
+}
+
+.our-trainers__wrapper {
+  padding: 120px 0;
+}
+
+.our-trainers__title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.our-trainers__blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 530px;
+}
+
+.our-trainers__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 370px;
+  min-height: 250px;
+  padding: 30px 25px;
+  background-color: #00BFF0;
+}
+
+.our-trainers__name,
+.our-trainers__spec,
+.our-trainers__info {
+  color: #fff;
+}
+
+.our-trainers__divide {
+  margin: 0 17px;
+  width: 1px;
+  height: 180px;
+  border: none;
+  background-color: #fff;
+}
+
+.our-trainers__trainer {
+  text-align: center;
+}
+
+.our-trainers__text {
+  color: #fff;
+}
+
+.our-trainers__quals,
+.our-trainers__speciality {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.our-trainers__quals-text,
+.our-trainers__speciality-text {
+  font-size: 11px;
+  font-weight: 300;
+}
+
+.our-trainers__block--light {
+  background-color: #fff;
+}
+
+.our-trainers__block--light .our-trainers__name,
+.our-trainers__block--light .our-trainers__spec,
+.our-trainers__block--light .our-trainers__info,
+.our-trainers__block--light .our-trainers__text {
+  color: #00BFF0;
+}
+
+.our-trainers__block--light .our-trainers__divide {
+  background-color: #00BFF0;
 }
 
 .display-block {
