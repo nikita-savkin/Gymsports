@@ -577,6 +577,16 @@ img {
   background-color: #00BFF0;
 }
 
+.underheader-bg--classes {
+  background: url(/img/classes/classes-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position-y: -100px;
+}
+
+.underheader-bg--classes:before {
+  content: 'classes';
+}
+
 .join {
   background-color: #00BFF0;
 }
@@ -1430,6 +1440,102 @@ img {
 
 .about-comment__name span {
   color: #72D0F4;
+}
+
+.classes__blocks-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  min-height: 990px;
+  padding: 85px 0px;
+}
+
+.class-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 570px;
+  min-height: 250px;
+}
+
+.class-block__img {
+  display: block;
+  width: 250px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.class-block__info {
+  padding: 10px 20px;
+  background-color: #72D0F4;
+  color: #fff;
+}
+
+.class-block__title {
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.class-block__subtitle {
+  font-size: 11px;
+  line-height: 14px;
+  margin-bottom: 15px;
+}
+
+.class-block__trainer {
+  padding: 0 20px;
+}
+
+.class-block__trainer-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 5px;
+}
+
+.class-block__spec {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.class-block__name {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.class-block__text {
+  font-size: 12px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.class-block__btn {
+  display: inline-block;
+  padding: 1px 10px;
+  border: 1px solid #fff;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.class-block__btn--second {
+  margin-left: 65px;
 }
 
 .display-block {
