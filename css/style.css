@@ -1,6 +1,7 @@
 .all-classes__link:hover:before,
 .join__join-btn,
-.about-comment__icon {
+.about-comment__icon,
+.table__nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,7 +19,10 @@
 .main__info-wrapper,
 .gallery-partner__wrapper,
 .footer-bottom__wrapper,
-.trainer-bigtitle__wrapper {
+.trainer-bigtitle__wrapper,
+.table__navbar,
+.contacts__wrapper,
+.class-event__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -37,7 +41,8 @@
 .from-blog__title,
 .gallery-partner__gallery-title,
 .gallery-partner__partner-title,
-.our-trainers__title {
+.our-trainers__title,
+.pricing-plans__title {
   font-family: "Open Sans Condensed";
   font-size: 30px;
   font-weight: 300;
@@ -104,6 +109,14 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  background: transparent;
+  z-index: 10;
 }
 
 .button-link {
@@ -567,7 +580,7 @@ img {
 .underheader-bg:before {
   position: absolute;
   content: 'About us';
-  bottom: 0;
+  bottom: -5px;
   left: 170px;
   font-size: 30px;
   font-weight: 300;
@@ -585,6 +598,32 @@ img {
 
 .underheader-bg--classes:before {
   content: 'classes';
+}
+
+.underheader-bg--timetable {
+  background: url(/img/timetable/timetable-bg.jpg);
+  background-size: cover;
+}
+
+.underheader-bg--timetable:before {
+  content: 'Timetable';
+}
+
+.underheader-bg--pricing {
+  background: url(/img/pricing/pricing-bg.jpg);
+  background-size: cover;
+}
+
+.underheader-bg--pricing:before {
+  content: 'Pricing';
+}
+
+.underheader-bg--contact {
+  background: none;
+}
+
+.underheader-bg--contact:before {
+  content: 'Contacts';
 }
 
 .join {
@@ -1106,6 +1145,74 @@ img {
      object-fit: contain;
 }
 
+.main__map {
+  position: relative;
+}
+
+.main__map-block {
+  display: block;
+  width: 100%;
+  height: 500px;
+  border: none;
+}
+
+.main__map-block--contacts {
+  height: 400px;
+}
+
+.schedule {
+  position: absolute;
+  top: 0;
+  right: 150px;
+  width: 370px;
+  height: 500px;
+  padding: 25px 25px;
+  text-align: center;
+  background-color: rgba(114, 208, 244, 0.8);
+  color: #fff;
+}
+
+.schedule__title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.schedule__list {
+  margin-bottom: 15px;
+}
+
+.schedule__day {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8px 0;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 5px;
+}
+
+.schedule__calendar-icon {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  margin-right: 5px;
+}
+
+.schedule__time {
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: auto;
+}
+
+.schedule__info {
+  font-size: 16px;
+}
+
+.schedule__subtext {
+  font-size: 30px;
+  font-style: italic;
+}
+
 .comment__wrapper {
   max-width: 790px;
   min-height: 300px;
@@ -1560,6 +1667,191 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.timetable__table-wrapper {
+  padding: 60px 0 100px;
+}
+
+.table__nav {
+  margin-bottom: 40px;
+}
+
+.table__navbar {
+  width: 850px;
+  max-width: 100%;
+}
+
+.table__nav-name {
+  padding: 5px 10px;
+  font-family: "Open Sans Condensed";
+  font-size: 30px;
+  color: #72D0F4;
+  border: 1px solid #72D0F4;
+  border-radius: 3px;
+}
+
+.table__nav-name:hover {
+  color: #2B0DDE;
+  border: 1px solid #2B0DDE;
+  cursor: pointer;
+}
+
+.main-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.main-table th,
+.main-table td {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.main-table__days {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #00BFF0;
+}
+
+.main-table__days th:first-child {
+  background-color: #89ddf7;
+}
+
+.main-table__days th:nth-child(2n) {
+  background-color: #c7ecfb;
+}
+
+.main-table__days th:nth-child(2n+3) {
+  background-color: #bfeafa;
+}
+
+.main-table__time {
+  font-size: 14px;
+  color: #fff;
+}
+
+.main-table__name td {
+  font-size: 12px;
+}
+
+.main-table__name td:first-child {
+  font-size: 14px;
+  background-color: #99e5f9;
+}
+
+.main-table__name td:nth-child(2n) {
+  background-color: #fff;
+}
+
+.main-table__name td:nth-child(2n+3) {
+  background-color: #f2fcfe;
+}
+
+.pricing-plans__wrapper {
+  padding: 60px 0;
+}
+
+.pricing-plans__title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.pricing-plans__blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pricing-block {
+  width: 270px;
+  min-height: 27px;
+  padding: 10px 50px;
+  text-align: center;
+  background-color: #00BFF0;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.pricing-block:hover {
+  background-color: #fff;
+  color: #00BFF0;
+}
+
+.pricing-block:hover .pricing-block__btn {
+  border-color: #00BFF0;
+  color: #00BFF0;
+}
+
+.pricing-block__uppertitle {
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.pricing-block__price {
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.pricing-block__prefs {
+  font-size: 12px;
+  line-height: 21px;
+}
+
+.pricing-block__prefs:last-child {
+  margin-bottom: 5px;
+}
+
+.pricing-block__btn {
+  display: block;
+  padding: 5px 40px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.contacts {
+  background-color: #e6e6e6;
+  margin-bottom: 100px;
+}
+
+.contacts__wrapper {
+  padding: 0 20px;
+  min-height: 200px;
+}
+
+.contacts__text {
+  color: #00BFF0;
+}
+
+.contacts__title {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.contacts__subtitle {
+  font-size: 16px;
+}
+
+.contacts__btn {
+  display: block;
+  padding: 10px 30px;
+  background-color: #ff0000;
+  color: #fff;
+}
+
+.class-event {
+  margin-bottom: 100px;
 }
 
 .display-block {
