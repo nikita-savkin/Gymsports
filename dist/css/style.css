@@ -1854,6 +1854,77 @@ img {
   margin-bottom: 100px;
 }
 
+.contact-info {
+  background-color: #00BFF0;
+}
+
+.contact-info__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 55px 0;
+}
+
+.message {
+  width: 675px;
+  color: #fff;
+}
+
+.message__title {
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.message__subtitle {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.message__input {
+  max-width: 212px;
+  width: 100%;
+  height: 35px;
+  margin-right: 15px;
+  margin-bottom: 5px;
+}
+
+.message__input:nth-of-type(3) {
+  margin-right: 0;
+}
+
+.message__input-name {
+  margin-bottom: 5px;
+}
+
+.message__area {
+  float: left;
+  resize: none;
+  max-width: 443px;
+  width: 100%;
+  margin-right: 20px;
+}
+
+.message__btn {
+  width: 212px;
+  height: 35px;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #e25050;
+}
+
+.message__valid {
+  display: inline;
+}
+
+.info {
+  width: 370px;
+}
+
 .display-block {
   display: block;
 }
