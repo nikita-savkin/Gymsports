@@ -589,6 +589,7 @@ img {
 
 .join {
   background-color: #00BFF0;
+  margin-bottom: 100px;
 }
 
 .join__wrapper {
@@ -1536,6 +1537,29 @@ img {
 
 .class-block__btn--second {
   margin-left: 65px;
+}
+
+.class-block--light .class-block__info {
+  background-color: #fff;
+  color: #00BFF0;
+}
+
+.class-block--light .class-block__btn {
+  border-color: #00BFF0;
+  color: #00BFF0;
+}
+
+.classes__classes-list {
+  margin-bottom: 100px;
+}
+
+.classes__classes-list-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .display-block {
