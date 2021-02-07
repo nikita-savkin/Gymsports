@@ -33,7 +33,7 @@
               </div>
             </div>
           </div>
-          <div class="class-block">
+          <div class="class-block class-block--light">
             <img src="img/classes/class-1.jpg" alt="classes-block-img" class="class-block__img">
             <div class="class-block__info">
               <h3 class="class-block__title">Kik Boxing</h3>
@@ -63,7 +63,7 @@
               </div>
             </div>
           </div>
-          <div class="class-block">
+          <div class="class-block class-block--light">
             <img src="img/classes/class-1.jpg" alt="classes-block-img" class="class-block__img">
             <div class="class-block__info">
               <h3 class="class-block__title">Kik Boxing</h3>
@@ -93,7 +93,7 @@
               </div>
             </div>
           </div>
-          <div class="class-block">
+          <div class="class-block class-block--light">
             <img src="img/classes/class-1.jpg" alt="classes-block-img" class="class-block__img">
             <div class="class-block__info">
               <h3 class="class-block__title">Kik Boxing</h3>
@@ -111,15 +111,18 @@
         </div>
       </div>
     </section>
-  </main>
-  <section class="classes__classes-list">
-    <div class="container">
-      <div class="classes__classes-list-wrapper">
-        @@include('_all-classes.html')
+    <section class="classes__classes-list">
+      <div class="container">
+        <div class="classes__classes-list-wrapper">
+          @@include('_all-classes.html')
+          @@include('_from-blog.html')
+        </div>
       </div>
-    </div>
-  </section>
-  
+    </section>
+    @@include('_join.html')
+    @@include('_gallery-partner.html')
+    @@include('_comment.html')
+  </main>
   @@include('_footer.html')
 </body>
 </html>
