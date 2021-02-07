@@ -1,0 +1,56 @@
+.timetable
+  &__table-wrapper 
+    padding: 60px 0 100px
+    
+.table 
+  &__nav 
+    @extend %flex-center
+    margin-bottom: 40px;
+  &__navbar 
+    @extend %flex-between 
+    width: 850px
+    max-width: 100%
+  &__nav-name 
+    padding: 5px 10px 
+    font-family: $font-condested
+    font-size: 30px 
+    color: $light 
+    border: 1px solid $light 
+    border-radius: 3px
+    &:hover 
+      color: $hover-color
+      border: 1px solid $hover-color
+      cursor: pointer
+    
+.main-table 
+  border-collapse: collapse
+  width: 100%
+  th, td 
+    padding: 40px 0
+    text-align: center
+  &__days 
+    font-size: 14px 
+    text-transform: uppercase
+    color: $dark
+    th
+      &:first-child
+        background-color: #89ddf7
+      &:nth-child(2n)
+        background-color: #c7ecfb
+      &:nth-child(2n+3)
+        background-color: #bfeafa
+  &__time 
+    font-size: 14px
+    color: #fff
+  &__name 
+    td 
+      font-size: 12px
+      &:first-child 
+        font-size: 14px
+        background-color: #99e5f9
+      &:nth-child(2n)
+        background-color: #fff
+      &:nth-child(2n+3)
+        background-color: #f2fcfe 
+
+    

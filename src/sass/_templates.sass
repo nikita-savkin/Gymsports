@@ -1,3 +1,10 @@
+.overlay 
+  position: absolute
+  width: 100% 
+  height: 500px 
+  background: transparent
+  z-index: 10
+
 .button-link
   padding: 10px 30px
   border: 1px solid #fff
@@ -302,7 +309,7 @@
   &:before 
     position: absolute
     content: 'About us'
-    bottom: 0
+    bottom: -5px
     left: 170px
     font-size: 30px
     font-weight: 300
@@ -316,6 +323,20 @@
     background-position-y: -100px
     &:before 
       content: 'classes'
+  &--timetable 
+    background: url(/img/timetable/timetable-bg.jpg)
+    background-size: cover
+    &:before 
+      content: 'Timetable'
+  &--pricing 
+    background: url(/img/pricing/pricing-bg.jpg)
+    background-size: cover
+    &:before 
+      content: 'Pricing'
+  &--contact 
+    background: none
+    &:before 
+      content: 'Contacts'
 
 .join 
   background-color: $dark

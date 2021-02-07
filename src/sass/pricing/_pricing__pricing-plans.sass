@@ -1,0 +1,47 @@
+.pricing-plans
+  &__wrapper 
+    padding: 60px 0
+  &__title 
+    @extend %main-title
+    text-align: center
+    margin-bottom: 25px 
+  &__blocks 
+    display: flex
+    justify-content: space-between 
+
+.pricing-block 
+  width: 270px
+  min-height: 27px
+  padding: 10px 50px
+  text-align: center
+  background-color: $dark 
+  color: #fff
+  transition: 0.3s
+  &:hover 
+    background-color: #fff
+    color: $dark
+    .pricing-block__btn
+      border-color: $dark 
+      color: $dark
+  &__uppertitle 
+    font-size: 14px 
+    font-weight: 300
+    text-transform: uppercase
+    margin-bottom: 5px 
+  &__price 
+    font-size: 36px 
+    text-transform: uppercase
+    margin-bottom: 5px 
+  &__prefs 
+    font-size: 12px 
+    line-height: 21px 
+    &:last-child 
+      margin-bottom: 5px
+  &__btn 
+    display: block
+    padding: 5px 40px 
+    border: 1px solid #fff 
+    border-radius: 3px
+    color: #fff 
+    font-size: 14px
+    text-transform: uppercase 
