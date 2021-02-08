@@ -628,6 +628,38 @@ img {
   content: 'Contacts';
 }
 
+.underheader-bg--pilates {
+  background: url(/img/class-single/pilates-bg.jpg);
+  background-size: cover;
+  margin-bottom: 100px;
+}
+
+.underheader-bg--pilates:before {
+  display: none;
+}
+
+.underheader-bg--pilates-title {
+  position: absolute;
+  bottom: -5px;
+  left: 170px;
+  font-size: 30px;
+  font-weight: 300;
+  padding: 8px 40px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #00BFF0;
+}
+
+.underheader-bg--pilates-title span {
+  font-size: 15px;
+}
+
+.underheader-bg__icon {
+  width: 10px;
+  height: 10px;
+  fill: #fff;
+}
+
 .join {
   background-color: #00BFF0;
   margin-bottom: 100px;
@@ -947,10 +979,10 @@ img {
 .header__submenu-navbar::after {
   position: absolute;
   content: '';
-  top: -20px;
+  top: -30px;
   left: -5px;
   width: 200px;
-  height: 20px;
+  height: 25px;
 }
 
 .header__submenu-navbar::before {
@@ -2047,6 +2079,132 @@ img {
 .join__join--contact .join__join-btn {
   -ms-flex-item-align: center;
       align-self: center;
+}
+
+.pilates__blocks {
+  margin-bottom: 100px;
+}
+
+.pilates__prices {
+  display: inline-block;
+}
+
+.schedule--pilates {
+  position: static;
+  display: inline-block;
+  height: 390px;
+  padding-top: 10px;
+  margin-bottom: 18px;
+}
+
+.pilates-content {
+  max-width: 770px;
+  min-height: 730px;
+  background-color: #fff;
+  float: left;
+  margin-right: 30px;
+}
+
+.pilates-content__img {
+  display: block;
+  height: 300px;
+}
+
+.pilates-content__text {
+  font-size: 14px;
+  line-height: 22px;
+  padding: 30px;
+  margin-bottom: 10px;
+}
+
+.pilates-content__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px;
+}
+
+.pilates-content__divide {
+  width: 1px;
+  height: 180px;
+  border: none;
+  background-color: #72D0F4;
+}
+
+.pilates-content__featured {
+  max-width: 200px;
+  width: 100%;
+}
+
+.pilates-content__featured-title,
+.pilates-content__pricing-title {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #72D0F4;
+}
+
+.pilates-content__feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  color: #a6a6a6;
+  margin-bottom: 10px;
+}
+
+.pilates-content__feature-icon {
+  width: 14px;
+  height: 14px;
+  fill: #72D0F4;
+  margin-right: 5px;
+}
+
+.pilates-content__pricing {
+  max-width: 215px;
+  width: 100%;
+}
+
+.pilates-content__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  color: #a6a6a6;
+  margin-bottom: 8px;
+}
+
+.pilates-content__arrow-icon {
+  width: 10px;
+  height: 10px;
+  fill: #72D0F4;
+  margin-right: 5px;
+}
+
+.pilates-content__dollar-icon {
+  width: 12px;
+  height: 12px;
+  fill: #fff;
+}
+
+.pilates-content__price-text {
+  margin-left: auto;
+  display: inline;
+  text-align: center;
+  padding: 1px 5px;
+  background-color: #72D0F4;
+  color: #fff;
 }
 
 .display-block {
