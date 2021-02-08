@@ -33,10 +33,13 @@
             <p class="message__title">send us a message</p>
             <p class="message__subtitle">We are an independent gym that is committed to working with you to gain the results you. want.</p>
             <form action="#" class="message__form">
-              <input type="text" class="message__input">
-              <input type="text" class="message__input">
-              <input type="text" class="message__input">
-              <textarea class="message__area" name="message__area" id="message" cols="30" rows="10"></textarea>
+              <input type="text" class="message__input" placeholder="ИМЯ" required
+              >
+              <input type="text" class="message__input" placeholder="EMAIL" required
+              >
+              <input type="text" class="message__input" placeholder="ГОРОД" required
+              >
+              <textarea class="message__area" name="message__area" id="message" cols="30" rows="10" placeholder="КОММЕНТАРИЙ"></textarea>
               <button class="message__btn">Submit your message</button>
               <p class="message__valid">Make sure you put a valid email.</p>
             </form>
@@ -46,11 +49,11 @@
             <p class="info__text">Ut volutpat consectetur aliquam. Curabitur auctor in nis ulum ornare. Sed consequat, augue condimentum fermentum gravida, metus elit vehicula dui. </p>
             <a href="tel: 19003429876" class="info__phone">
               <svg class="info__phone-icon">
-                <use xlink:href="img/icons/icons.svg#phone"></use>
+                <use xlink:href="img/icons/icons.svg#smartphone"></use>
               </svg>
               1-900-342-9876
             </a>
-            <a href="#" class="email__phone">
+            <a href="mailto:info@gymsports.com" class="info__email">
               <svg class="info__email-icon">
                 <use xlink:href="img/icons/icons.svg#email"></use>
               </svg>
@@ -60,6 +63,85 @@
         </div>
       </div>
     </section>
+    <section class="contact-content">
+      <div class="container">
+        <div class="contact-content__wrapper">
+          <div class="schedule schedule--contact">
+            <h3 class="schedule__title">Opening Hours</h3>
+            <ul class="schedule__list">
+              <li class="schedule__day">
+                <svg class="schedule__calendar-icon">
+                  <use xlink:href="img/icons/icons.svg#calendar"></use>
+                </svg>
+                <p class="schedule__day-name">Monday</p>
+                <p class="schedule__time">6:00 - 24:00</p>
+              </li>
+              <li class="schedule__day">
+                <svg class="schedule__calendar-icon">
+                  <use xlink:href="img/icons/icons.svg#calendar"></use>
+                </svg>
+                <p class="schedule__day-name">Monday</p>
+                <p class="schedule__time">6:00 - 24:00</p>
+              </li>
+              <li class="schedule__day">
+                <svg class="schedule__calendar-icon">
+                  <use xlink:href="img/icons/icons.svg#calendar"></use>
+                </svg>
+                <p class="schedule__day-name">Monday</p>
+                <p class="schedule__time">6:00 - 24:00</p>
+              </li>
+              <li class="schedule__day">
+                <svg class="schedule__calendar-icon">
+                  <use xlink:href="img/icons/icons.svg#calendar"></use>
+                </svg>
+                <p class="schedule__day-name">Monday</p>
+                <p class="schedule__time">6:00 - 24:00</p>
+              </li>
+              <li class="schedule__day">
+                <svg class="schedule__calendar-icon">
+                  <use xlink:href="img/icons/icons.svg#calendar"></use>
+                </svg>
+                <p class="schedule__day-name">Monday</p>
+                <p class="schedule__time">6:00 - 24:00</p>
+              </li>
+              <li class="schedule__day">
+                <svg class="schedule__calendar-icon">
+                  <use xlink:href="img/icons/icons.svg#calendar"></use>
+                </svg>
+                <p class="schedule__day-name">Monday</p>
+                <p class="schedule__time">6:00 - 24:00</p>
+              </li>
+              <li class="schedule__day">
+                <svg class="schedule__calendar-icon">
+                  <use xlink:href="img/icons/icons.svg#calendar"></use>
+                </svg>
+                <p class="schedule__day-name">Monday</p>
+                <p class="schedule__time">6:00 - 24:00</p>
+              </li>
+            </ul>
+            <p class="schedule__info">Nam vestibulum, arcu sodales feugiat consectetur, nisl orci bibendum elit.</p>
+            <p class="schedule__subtext">Enjoy it!</p>
+          </div>
+          <div class="contact-content__events">
+            @@include('_events.html')
+          </div>
+          <div class="contact-content__from-blog">
+            @@include('_from-blog.html')
+          </div>
+          <div class="join__join join__join--contact">
+            <div class="join__join-info">
+              <h3 class="join__join-title">WHY JOIN?</h3>
+              <p class="join__join-subtitle">This is an awesome subhead</p>
+              <p class="join__join-text">Maecenas mattis vitae tellus vel interdum. Quisque lacinia mauris id convallis pretium. Aliquam id odio sit amet mauris porttitor iaculis a eu dui.</p>
+            </div>
+            <button class="join__join-btn">Join Today</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    @@include('_gallery-partner.html')
+    @@include('_comment.html')
   </main>
+  @@include('_footer.html')
 </body>
 </html>
