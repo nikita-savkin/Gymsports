@@ -100,13 +100,13 @@
       &:before
         position: absolute 
         @extend %flex-center
-        content: "Timetible"
+        content: "Написать"
         width: 106px
         height: 30px
         top: -40px
         left: -15px
         font-family: $font-condested
-        font-size: 13px
+        font-size: 15px
         font-weight: 300
         text-transform: uppercase
         color: $light
@@ -123,15 +123,15 @@
     &-calendar
       &:hover 
         &:before
-          content: "Send to"
+          content: "Расписание"
     &-like
       &:hover 
         &:before
-          content: "Like it"
+          content: "Нравится"
     &-arrow
       &:hover 
         &:before
-          content: "Share"
+          content: "Поделиться"
 
 .prices
   max-width: 370px
@@ -141,10 +141,10 @@
     color: $title-color
     margin-bottom: 25px
     span  
-      font-style: italic
+      font-weight: 600
   &__block 
     min-height: 250px 
-    padding: 53px 30px 30px
+    padding: 30px
     color: #fff   
     background-color: $dark   
     text-align: center
@@ -165,9 +165,10 @@
     margin-bottom: 25px 
     text-align: center
   &__block 
-    @extend %flex-between
+    display: flex
+    justify-content: space-between
     min-height: 250px 
-    padding: 30px 30px 25px
+    padding: 20px 30px 25px
     background-color: #fff
     hr 
       width: 1px
@@ -175,7 +176,7 @@
       border: none
       background-color: #a9ddf1
   &__trainer 
-    width: 128px
+    width: 145px
     min-height: 128px
     text-align: center
   &__img 
@@ -225,7 +226,7 @@
     margin-bottom: 25px 
   &__block 
     min-height: 250px
-    padding: 20px 28px
+    padding: 8px 30px
     background-color: $light
   &__event 
     display: flex
@@ -278,7 +279,7 @@
     text-align: center
     margin-bottom: 25px 
   &__block 
-    min-height: 250px 
+    height: 250px 
     padding: 10px 20px 
     background-color: #d4d6d6
   &__event 
@@ -287,6 +288,8 @@
     margin-bottom: 10px
     &:last-child
       margin-bottom: 0
+  &__info 
+    overflow: hidden
   &__img 
     display: block
     width: 70px
@@ -296,7 +299,6 @@
   &__text 
     font-size: 13px 
     color: #fff 
-    margin-bottom: 3px
   &__date 
     font-size: 13px 
     color: #000
@@ -430,8 +432,7 @@
         margin-left: 37px
         color: #fff 
         background-color: $light
-
-
+        
 
 
 
