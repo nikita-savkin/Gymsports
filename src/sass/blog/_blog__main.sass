@@ -1,0 +1,206 @@
+.blog-main
+  &__wrapper  
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    padding: 80px 0
+
+.blog-column
+  max-width: 770px 
+  width: 100%
+
+.blog-block 
+  position: relative
+  background-color: #fff
+  &__top-img  
+    @extend %flex-center
+    position: absolute
+    top: 0 
+    right: 0 
+    width: 40px 
+    height: 40px 
+    background-color: $dark 
+    padding: 7px 
+  &__top-icon 
+    fill: #fff
+  &__title 
+    font-size: 24px
+    font-weight: 600
+    line-height: 24px
+    color: $light 
+    padding: 25px
+  &__img 
+    display: block
+    max-height: 250px
+    object-fit: cover
+  &__text 
+    padding: 20px 25px 
+    font-size: 12px 
+    line-height: 18px
+    color: #99a3b1 
+  &__bottom 
+    display: flex 
+    align-items: center 
+    padding: 25px 30px
+  &__date, &__person, &__like, &__send
+    text-align: center 
+    width: 70px
+    margin-right: 35px
+  &__date-icon, &__person-icon, &__like-icon, &__send-icon
+    width: 30px 
+    height: 30px 
+    fill: $light
+    margin-bottom: 3px 
+  &__date-text, &__person-text, &__like-text, &__send-text
+    font-size: 12px   
+    color: $light
+  &__btn 
+    margin-left: auto
+    padding: 5px 10px 
+    font-size: 12px 
+    font-weight: 600
+    text-transform: uppercase
+    color: #ed5565
+  &__divide 
+    height: 3px 
+    border: none
+    margin: 70px 0 40px 
+    background-color: #e5e6e6
+
+.blog
+  &-aside 
+    max-width: 370px
+    width: 100%
+  &-categories 
+    padding: 18px 40px 
+    background-color: $light 
+    color: #fff 
+    margin-bottom: 30px
+    &__title 
+      font-size: 16px
+      font-weight: 600 
+      text-transform: uppercase
+      margin-bottom: 20px 
+    &__list 
+      margin-left: 15px 
+    &__name 
+      font-size: 14px
+      font-weight: 600 
+      text-transform: uppercase
+      margin-bottom: 5px 
+      &-link 
+        display: inline-flex
+        align-items: center
+        color: #fff
+        &:before 
+          display: inline-block
+          content: ''
+          background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 24 24'%3E%3Cpath d='M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 18v-4h-7v-4h7v-4l6 6-6 6z'/%3E%3C/svg%3E") 
+          width: 15px 
+          height: 15px
+          margin-right: 15px
+  &-posts 
+    padding: 18px 40px 
+    background-color: $dark
+    margin-bottom: 30px
+    &__title 
+      font-size: 16px
+      font-weight: 600  
+      color: #fff 
+      margin-bottom: 20px 
+  &-post 
+    &__info 
+      padding: 0 3px 5px
+      border-bottom: 1px solid #e5e6e6
+      margin-bottom: 10px
+      &:last-child
+        margin-bottom: 0
+      &-link
+        display: flex
+        &:before 
+          display: inline-block
+          content: ''
+          background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3Csvg fill='%23fff' version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 512.002 512.002' style='enable-background:new 0 0 512.002 512.002;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath d='M388.425,241.951L151.609,5.79c-7.759-7.733-20.321-7.72-28.067,0.04c-7.74,7.759-7.72,20.328,0.04,28.067l222.72,222.105 L123.574,478.106c-7.759,7.74-7.779,20.301-0.04,28.061c3.883,3.89,8.97,5.835,14.057,5.835c5.074,0,10.141-1.932,14.017-5.795 l236.817-236.155c3.737-3.718,5.834-8.778,5.834-14.05S392.156,245.676,388.425,241.951z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A") no-repeat
+          min-width: 15px 
+          min-height: 100%
+          margin-top: 2px
+          margin-right: 15px
+      &-text 
+        font-size: 14px
+        color: #fff
+        word-break: break-all
+    &__date 
+      font-size: 12px
+      color: #5d5d5d
+  &-trainers 
+    margin-bottom: 30px
+  &-partners 
+    margin-bottom: 30px
+  &-tags 
+    padding: 40px
+    &__title 
+      font-size: 14px 
+      font-weight: 600
+      color: $light 
+      margin-bottom: 20px 
+    &__tag 
+      display: inline-block
+      padding: 3px 
+      border: none
+      background-color: $light 
+      color: #fff
+      margin-bottom: 5px
+  &-archive 
+    padding: 18px 40px 
+    background-color: #e6e6e6
+    margin-bottom: 30px
+    &__title 
+      font-size: 16px
+      color: $light 
+      margin-bottom: 20px
+    &__list 
+      margin-left: 15px 
+    &__date-link 
+      display: inline-block
+      color: $light
+      text-align: center
+      margin-bottom: 10px
+      &:before 
+        display: inline-block
+        content: ''
+        background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300bff0' viewBox='0 0 24 24'%3E%3Cpath d='M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 18v-4h-7v-4h7v-4l6 6-6 6z'/%3E%3C/svg%3E") 
+        width: 15px 
+        height: 15px
+        margin-right: 15px
+  &-partner 
+    margin: 0 auto
+  &-pages 
+    display: flex
+    align-items: center
+    &__btn 
+      padding: 7px 20px 
+      border: none
+      border-radius: 3px
+      background-color: $light
+      font-size: 14px 
+      font-weight: 600 
+      color: #fff
+      &--prev 
+        margin-right: 5px
+      &--next 
+        margin-left: 5px
+    &__page 
+      padding: 10px
+      font-size: 14px 
+      font-weight: 600 
+
+
+.schedule--blog 
+  position: static
+  margin-bottom: 30px
+
+
+
+
+
+   

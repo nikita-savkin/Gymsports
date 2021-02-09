@@ -19,6 +19,9 @@
     box-shadow: 0 0 10px #fff
     color: #fff
 
+.main
+  background-color: #f3f3f3
+
 .liveroom 
   width: 370px
   min-height: 250px
@@ -311,7 +314,7 @@
   border-bottom: 10px solid $dark 
   &:before 
     position: absolute
-    content: 'About us'
+    content: 'О нас'
     bottom: -5px
     left: 170px
     font-size: 30px
@@ -325,21 +328,26 @@
     background-size: cover
     background-position-y: -100px
     &:before 
-      content: 'classes'
+      content: 'Категории'
   &--timetable 
     background: url(/img/timetable/timetable-bg.jpg)
     background-size: cover
     &:before 
-      content: 'Timetable'
+      content: 'Расписание'
   &--pricing 
     background: url(/img/pricing/pricing-bg.jpg)
     background-size: cover
     &:before 
-      content: 'Pricing'
+      content: 'Цены'
   &--contact 
     background: none
     &:before 
-      content: 'Contacts'
+      content: 'Контакты'
+  &--blog 
+    background: url(/img/blog/blog-bg.jpg) no-repeat 
+    background-size: cover
+    &:before 
+      content: 'Блог'
   &--pilates 
     background: url(/img/class-single/pilates-bg.jpg)
     background-size: cover
