@@ -589,6 +589,8 @@ img {
   height: 70px;
   margin-right: 20px;
   background-color: #fff;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .from-blog__text {
@@ -1774,6 +1776,8 @@ img {
   border-radius: 50%;
   float: left;
   margin-right: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .class-block__spec {
