@@ -370,7 +370,7 @@ img {
 }
 
 .trainers {
-  width: 370px;
+  max-width: 370px;
 }
 
 .trainers__title {
@@ -400,6 +400,7 @@ img {
 
 .trainers__trainer {
   position: relative;
+  width: 160px;
   min-height: 128px;
   padding: 0 10px;
   text-align: center;
@@ -1238,7 +1239,7 @@ img {
 }
 
 .gallery-partner__wrapper {
-  padding: 37px 0 74px;
+  padding: 37px 50px 74px 0;
 }
 
 .gallery-partner__gallery {
@@ -1436,14 +1437,21 @@ img {
 }
 
 .footer__btn {
-  width: 212px;
-  padding: 8px 20px;
+  max-width: 220px;
+  padding: 8px 15px;
   border: none;
   font-size: 12px;
   text-align: start;
   text-transform: uppercase;
   color: #fff;
   background-color: #e25050;
+}
+
+.footer__btn-arrow {
+  width: 10px;
+  height: 10px;
+  margin-left: 8px;
+  fill: #fff;
 }
 
 .footer__logo {
