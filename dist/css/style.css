@@ -117,6 +117,7 @@ img {
 
 .main {
   background-color: #f3f3f3;
+  overflow: auto;
 }
 
 .overlay {
@@ -1486,6 +1487,7 @@ img {
   color: #72D0F4;
   opacity: 0.5;
   margin-bottom: 13px;
+  outline: none;
 }
 
 .footer__btn {
@@ -1497,6 +1499,11 @@ img {
   text-transform: uppercase;
   color: #fff;
   background-color: #e25050;
+}
+
+.footer__btn:focus {
+  -webkit-box-shadow: 0 0 20px rgba(226, 80, 80, 0.5);
+          box-shadow: 0 0 20px rgba(226, 80, 80, 0.5);
 }
 
 .footer__btn-arrow {
@@ -1553,8 +1560,10 @@ img {
 
 .footer__menu-link,
 .footer__community-link {
+  display: inline-block;
   font-size: 13px;
   color: #fff;
+  margin-bottom: 8px;
 }
 
 .footer__community {
@@ -1784,6 +1793,10 @@ img {
   padding: 85px 0px;
 }
 
+.classes__main .gallery-partner {
+  margin-bottom: 0;
+}
+
 .class-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1838,20 +1851,20 @@ img {
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .class-block__name {
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .class-block__text {
   font-size: 12px;
   font-style: italic;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .class-block__btn {
@@ -1894,6 +1907,10 @@ img {
   padding: 60px 0 100px;
 }
 
+.timetable .gallery-partner {
+  margin-bottom: 0;
+}
+
 .table__nav {
   margin-bottom: 40px;
 }
@@ -1907,6 +1924,7 @@ img {
   padding: 5px 10px;
   font-family: "Open Sans Condensed";
   font-size: 30px;
+  text-transform: uppercase;
   color: #72D0F4;
   border: 1px solid #72D0F4;
   border-radius: 3px;
@@ -1990,7 +2008,7 @@ img {
 .pricing-block {
   width: 270px;
   min-height: 27px;
-  padding: 10px 50px;
+  padding: 20px;
   text-align: center;
   background-color: #00BFF0;
   color: #fff;
@@ -2010,25 +2028,40 @@ img {
 }
 
 .pricing-block__uppertitle {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 300;
   text-transform: uppercase;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 
 .pricing-block__price {
   font-size: 36px;
   text-transform: uppercase;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.pricing-block__price span {
+  font-size: 20px;
+  font-style: italic;
 }
 
 .pricing-block__prefs {
-  font-size: 12px;
-  line-height: 21px;
+  font-size: 13px;
+  line-height: 30px;
+  word-wrap: break-word;
 }
 
 .pricing-block__prefs:last-child {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.pricing-block__prefs:before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  background: url("data:image/svg+xml;charset=UTF-8,%3csvg fill='%23fff' viewBox='0 0 515.556 515.556' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 274.226l176.549 176.886L515.556 112.44l-48.67-47.997-290.337 290L47.996 225.891z'/%3e%3c/svg%3e") no-repeat;
 }
 
 .pricing-block__btn {
@@ -2505,6 +2538,11 @@ img {
   background-color: #e5e6e6;
 }
 
+.blog-block__video {
+  width: 100%;
+  height: 400px;
+}
+
 .blog-aside {
   max-width: 370px;
   width: 100%;
@@ -2675,6 +2713,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 15px;
 }
 
 .blog-pages__btn {
@@ -2789,4 +2828,36 @@ img {
   position: fixed;
   top: 50px;
   left: 10px;
+}
+
+.no-color {
+  visibility: hidden;
+}
+
+.red-color {
+  color: #ff0000;
+}
+
+.purpur-color {
+  color: #c102c3;
+}
+
+.blue-color {
+  color: #0295c3;
+}
+
+.light-green {
+  color: #00b398;
+}
+
+.green-color {
+  color: #116800;
+}
+
+.black-color {
+  color: #0c0f00;
+}
+
+.background-white {
+  background-color: #fff;
 }

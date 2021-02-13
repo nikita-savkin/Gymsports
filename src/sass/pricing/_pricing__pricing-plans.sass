@@ -12,7 +12,7 @@
 .pricing-block 
   width: 270px
   min-height: 27px
-  padding: 10px 50px
+  padding: 20px 
   text-align: center
   background-color: $dark 
   color: #fff
@@ -24,19 +24,30 @@
       border-color: $dark 
       color: $dark
   &__uppertitle 
-    font-size: 14px 
+    font-size: 20px 
     font-weight: 300
     text-transform: uppercase
-    margin-bottom: 5px 
+    margin-bottom: 15px 
   &__price 
     font-size: 36px 
     text-transform: uppercase
-    margin-bottom: 5px 
+    margin-bottom: 15px 
+    span 
+      font-size: 20px
+      font-style: italic
   &__prefs 
-    font-size: 12px 
-    line-height: 21px 
+    font-size: 13px 
+    line-height: 30px 
+    word-wrap: break-word
     &:last-child 
-      margin-bottom: 5px
+      margin-bottom: 15px
+    &:before 
+      content: '' 
+      display: inline-block
+      width: 20px
+      height: 20px
+      margin-right: 5px
+      background: url("data:image/svg+xml;charset=UTF-8,%3csvg fill='%23fff' viewBox='0 0 515.556 515.556' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 274.226l176.549 176.886L515.556 112.44l-48.67-47.997-290.337 290L47.996 225.891z'/%3e%3c/svg%3e") no-repeat
   &__btn 
     display: block
     padding: 5px 40px 

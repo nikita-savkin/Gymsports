@@ -24,6 +24,7 @@
     color: $light
     opacity: 0.5
     margin-bottom: 13px 
+    outline: none
   &__btn 
     max-width: 220px
     padding: 8px 15px 
@@ -33,6 +34,8 @@
     text-transform: uppercase
     color: #fff 
     background-color: #e25050
+    &:focus 
+      box-shadow: 0 0 20px rgba(#e25050, 0.5)
     &-arrow 
       width: 10px
       height: 10px
@@ -67,8 +70,10 @@
     &-list 
       padding-left: 5px
     &-link 
+      display: inline-block
       font-size: 13px 
       color: #fff
+      margin-bottom: 8px
   &__community 
     margin-left: auto
   &-bottom 

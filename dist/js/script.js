@@ -10,7 +10,7 @@ $('.trainers__slider').slick({
 // Галерея - карусель
 $('.gallery-partner__carousel').slick({
   slidesToShow: 1,
-  autoplay: false,
+  autoplay: true,
   autoplaySpeed: 2000,
   swipe: false,
   prevArrow: '<button type="button" class="slick-prev slick-arrow__gallery slick-prev__gallery"></button>',
@@ -38,3 +38,81 @@ carouselImgModal.forEach((modal) => {
     modal.classList.remove('display-flex')
   })
 })
+
+//Цвета для таблицы
+
+const classNameTable = document.querySelectorAll('.main-table__name td');
+
+classNameTable.forEach(item => {
+
+  let aerobics = item.textContent.includes('Аэробика'),
+    pilates = item.textContent.includes('Пилатес'),
+    kikboxing = item.textContent.includes('Кикбоксинг'),
+    boxing = item.textContent.includes('Бокс'),
+    crossfit = item.textContent.includes('Кроссфит'),
+    spinning = item.textContent.includes('Спиннинг');
+
+  if (aerobics) {
+    item.classList.add('red-color');
+  } else if (pilates) {
+    item.classList.add('purpur-color');
+  } else if (kikboxing) {
+    item.classList.add('blue-color');
+  } else if (boxing) {
+    item.classList.add('light-green');
+  } else if (crossfit) {
+    item.classList.add('green-color');
+  } else if (spinning) {
+    item.classList.add('black-color');
+  }
+});
+
+//Фильтр для таблицы
+
+const tableNavName = document.querySelectorAll('.table__nav-name'),
+  mainTableClassName = document.querySelectorAll('.main-table__name td:not(.main-table__time)');
+
+function changeContentTable(classNameStandart, classNameUpper) {
+  mainTableClassName.forEach(item => {
+
+    item.classList.remove('no-color');
+    item.style.backgroundColor = "rgba(114, 208, 244, 0.1)";
+
+    if (!item.textContent.includes(classNameStandart) || item.textContent.includes(classNameUpper)) {
+      item.classList.add('no-color');
+    }
+  });
+}
+
+tableNavName.forEach((btn, i) => {
+
+  btn.addEventListener('click', () => {
+
+    switch (i) {
+      case 0:
+        mainTableClassName.forEach(item => {
+          item.classList.remove('no-color');
+          item.style.backgroundColor = null;
+        });
+        break;
+      case 1:
+        changeContentTable('Аэробика', 'АЭРОБИКА');
+        break;
+      case 2:
+        changeContentTable('Кроссфит', 'КРОССФИТ');
+        break;
+      case 3:
+        changeContentTable('Бокс', 'БОКС');
+        break;
+      case 4:
+        changeContentTable('Кикбоксинг', 'КИКБОКСИНГ');
+        break;
+      case 5:
+        changeContentTable('Пилатес', 'ПИЛАТЕС');
+        break;
+      case 6:
+        changeContentTable('Спиннинг', 'СПИННИНГ');
+        break;
+    }
+  });
+});
