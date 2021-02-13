@@ -10,12 +10,12 @@
       @extend %main-title 
       text-align: center
       margin-bottom: 25px 
-    &__carousel 
-      min-height: 345px
-      &-content 
-        display: flex
-        flex-wrap: wrap
-        justify-content: space-between
+  &__carousel  
+    &-content 
+      min-height: 350px 
+      display: flex !important
+      flex-wrap: wrap 
+      justify-content: space-between 
   &__partner 
     width: 256px
     &-title
@@ -32,9 +32,38 @@
   width: 253px
   height: 170px
   object-fit: cover
+  &-modal 
+    display: none
+    align-items: center
+    justify-content: center
+    position: fixed
+    width: 100vw
+    height: 100vh
+    top: 50% 
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 100
+    background-color: rgba(#5e5e5e, 0.3)
+    img 
+      width: 1000px
+      animation: modal-animation 0.5s
+      transform-origin: center
+
+@keyframes modal-animation
+  0%
+    width: 0
+  100%
+    width: 1000px
+
+
+
+
+
+
 
 .partners-img 
   width: 115px
   height: 95px
   object-fit: contain
+
 
