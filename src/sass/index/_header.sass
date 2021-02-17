@@ -45,6 +45,10 @@
       justify-content: space-between
   &__button-link 
     border: 1px solid transparent
+    @include media($desktop)
+      padding: 10px 25px
+    @include media($tablet)
+      padding: 10px
     &:hover 
       border: 1px solid #fff
     &-classes

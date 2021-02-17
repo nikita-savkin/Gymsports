@@ -35,7 +35,6 @@ let {src, dest} = require('gulp'),
   del = require("del"),
   sass = require("gulp-sass"),
   autoprefixer = require("gulp-autoprefixer"),
-  groupMedia = require("gulp-group-css-media-queries"),
   cleanCss = require("gulp-clean-css"),
   rename = require("gulp-rename"),
   imageMin = require("gulp-imagemin"),
@@ -139,9 +138,6 @@ function css() {
       sass({
         outputStyle: "expanded"
       })
-    )
-    .pipe(
-      groupMedia()
     )
     .pipe(
       autoprefixer({

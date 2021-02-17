@@ -2,3 +2,6 @@
   margin-bottom: 84px
   &-wrapper
     @extend %flex-between
+    @include media($tablet) 
+      flex-direction: column
+

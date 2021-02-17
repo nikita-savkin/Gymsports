@@ -27,9 +27,14 @@
   background-color: #f3f3f3
 
 .liveroom 
-  width: 370px
+  max-width: 370px
   min-height: 250px
   border-bottom: 4px solid $dark
+  @include media($desktop)
+   max-width: 310px
+  @include media($tablet)
+    max-width: 80%
+    margin: 0 auto 20px
   &__top 
     display: flex
     justify-content: space-between  
@@ -56,8 +61,13 @@
     object-position: top
 
 .all-classes
-  max-width: 770px
+  width: 770px
   position: relative
+  @include media($desktop) 
+    margin-right: 10px
+  @include media($tablet) 
+    margin-right: 0 
+    margin-bottom: 80px 
   &__title 
     @extend %main-title
     color: $title-color
@@ -83,7 +93,7 @@
     display: flex
     justify-content: space-between
     align-items: start
-    width: 326px
+    width: 47%
     min-height: 34px
     margin-bottom: 27px
     border-bottom: 1px solid rgba(#fff, 0.6)
@@ -245,7 +255,7 @@
     margin-bottom: 25px 
   &__block 
     min-height: 250px
-    padding: 8px 30px
+    padding: 18px 30px
     background-color: $light
   &__event 
     display: flex
@@ -368,7 +378,6 @@
   &--pilates 
     background: url(/img/class-single/pilates-bg.jpg)
     background-size: cover
-    margin-bottom: 100px
     &:before 
       display: none
   &--pilates-title 
@@ -383,6 +392,15 @@
     background-color: $dark
     span 
       font-size: 15px
+  &--cardio 
+    background: url(/img/class-single/cardio-bg.jpg)
+    background-size: cover
+  &--crossfit
+    background: url(/img/class-single/crossfit-bg.jpg)
+    background-size: cover
+  &--aerobics
+    background: url(/img/class-single/aerobics-bg.jpg)
+    background-size: cover
   &__icon 
     width: 10px 
     height: 10px

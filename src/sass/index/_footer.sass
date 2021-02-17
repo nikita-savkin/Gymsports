@@ -3,10 +3,14 @@
     background-color: $light
     &__wrapper 
       display: flex
+      justify-content: space-between
       padding: 45px 25px 57px
+      @include media($land-phone) 
+        flex-wrap: wrap
   &__signup
-    width: 340px
-    margin-right: 60px
+    width: 30%
+    @include media($land-phone)  
+      width: 45%
     &-title 
       font-size: 18px
       text-transform: uppercase
@@ -45,8 +49,9 @@
     margin-bottom: 22px
     margin: 0 auto 15px
   &__contacts 
-    max-width: 360px
-    margin-right: 60px
+    width: 40%
+    @include media($land-phone)  
+      width: 45%
     &-text 
       font-size: 13px
       line-height: 23px 
@@ -62,20 +67,24 @@
       padding-left: 10px
       color: #fff
   &__menu, &__community
+    @include media($land-phone) 
+      width: 100%
     &-title 
       font-size: 18px
       text-transform: uppercase
       color: #fff
       margin-bottom: 27px 
+      @include media($land-phone)  
+        border: 1px solid #fff
     &-list 
       padding-left: 5px
+      @include media($land-phone)   
+       display: none
     &-link 
       display: inline-block
       font-size: 13px 
       color: #fff
       margin-bottom: 8px
-  &__community 
-    margin-left: auto
   &-bottom 
     background-color: $dark   
     &__wrapper 

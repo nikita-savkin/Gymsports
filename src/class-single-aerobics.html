@@ -4,45 +4,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gymsport</title>
+  <title>Аэробика</title>
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/style.min.css" />
 
 </head>
 
 <body>
   @@include('_header.html')
-  <section class="underheader-bg underheader-bg--pilates">
+  <section class="underheader-bg underheader-bg--aerobics">
     <div class="underheader-bg--pilates-title">
-      Classes
+      Категории
       <span>
         <svg class="underheader-bg__icon">
           <use xlink:href="img/icons/icons.svg#next"></use>
         </svg>
-        Pilates
+        Аэробика
       </span>
     </div>
   </section>
-  <main class="pilates-main">
+  <main class="main pilates-main">
     <section class="pilates__blocks">
       <div class="container">
         <div class="pilates__blocks-wrapper">
           <div class="pilates-content">
-            <img class="pilates-content__img" src="#" alt="pilates-img">
+            <img class="pilates-content__img" src="img/class-single/aerobics-1.jpg" alt="pilates-img">
             <p class="pilates-content__text">
-              Duis dapibus aliquam mi, eget euismod sem scelerisque ut. Vivamus at elit quis urna adipiscing iaculis. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur vitae velit in neque dictum blandit. Proin in iaculis neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+              Программы занятий направлены на укрепление и подтяжку мышц тела (ног, живота, спины), исправление осанки. Они укрепляют позвоночник, сосуды и сердце, тело становится более гибким и эластичным. Аэробика – это активные, быстрые тренировки, особенно актуальные для тех, кто хочет быстро похудеть.
             </p>
             <div class="pilates-content__info">
               <div class="trainers__trainer">
-                <img class="trainers__img" src="/img/trainer-woman-1.png" alt="trainer-img">
-                <p class="trainers__name">REBECCA SMITH</p>
-                <p class="trainers__spec">SPINNING</p>
+                <img class="trainers__img" src="img/small/jasmine.jpg" alt="trainer-img">
+                <p class="trainers__name">ЖАСМИН ПАТТЕР</p>
+                <p class="trainers__spec">Аэробика</p>
                 <p class="trainers__info">
-                  Creating the perfect body is no small matter.
+                  Заряжаю своих учеников энергией
                 </p>
                 <div class="trainers__icons">
                   <svg class="trainers__icon trainers__icon-like">
@@ -66,103 +67,88 @@
               <hr class="pilates-content__divide">
               <div class="pilates-content__featured">
                 <p class="pilates-content__featured-title">
-                  FEATURED
+                  Преимущества
                 </p>
                 <ul class="pilates-content__featured-list">
                   <li class="pilates-content__feature">
                     <svg class="pilates-content__feature-icon">
                       <use xlink:href="img/icons/icons.svg#arrow-right-1"></use>
                     </svg>
-                    Duis dapibus aliquam mi
+                    Укрепляются мышцы
                   </li>
                   <li class="pilates-content__feature">
                     <svg class="pilates-content__feature-icon">
                       <use xlink:href="img/icons/icons.svg#arrow-right-1"></use>
                     </svg>
-                    Duis dapibus aliquam mi
+                    Укрепляется сердце
                   </li>
                   <li class="pilates-content__feature">
                     <svg class="pilates-content__feature-icon">
                       <use xlink:href="img/icons/icons.svg#arrow-right-1"></use>
                     </svg>
-                    Duis dapibus aliquam mi
+                    Сжигаются калории
                   </li>
                   <li class="pilates-content__feature">
                     <svg class="pilates-content__feature-icon">
                       <use xlink:href="img/icons/icons.svg#arrow-right-1"></use>
                     </svg>
-                    Duis dapibus aliquam mi
+                    Повышается иммунитет
                   </li>
                   <li class="pilates-content__feature">
                     <svg class="pilates-content__feature-icon">
                       <use xlink:href="img/icons/icons.svg#arrow-right-1"></use>
                     </svg>
-                    Duis dapibus aliquam mi
+                    Снимается стресс
                   </li>
                 </ul>
               </div>
               <hr class="pilates-content__divide">
               <div class="pilates-content__pricing">
-                <p class="pilates-content__pricing-title">Pricing of Class</p>
+                <p class="pilates-content__pricing-title">Цены</p>
                 <ul class="pilates-content__pricing-list">
                   <li class="pilates-content__price">
                     <svg class="pilates-content__arrow-icon">
                       <use xlink:href="img/icons/icons.svg#next"></use>
                     </svg>
-                    3 days session 
+                    1 день
                     <p class="pilates-content__price-text">
-                      <svg class="pilates-content__dollar-icon">
-                        <use xlink:href="img/icons/icons.svg#dollar"></use>
-                      </svg>
-                      9.90
+                      500 р.
                     </p>
                   </li>
                   <li class="pilates-content__price">
                     <svg class="pilates-content__arrow-icon">
                       <use xlink:href="img/icons/icons.svg#next"></use>
                     </svg>
-                    3 days session 
+                    3 дня
                     <p class="pilates-content__price-text">
-                      <svg class="pilates-content__dollar-icon">
-                        <use xlink:href="img/icons/icons.svg#dollar"></use>
-                      </svg>
-                      9.90
+                      1000 р.
                     </p>
                   </li>
                   <li class="pilates-content__price">
                     <svg class="pilates-content__arrow-icon">
                       <use xlink:href="img/icons/icons.svg#next"></use>
                     </svg>
-                    3 days session 
+                    5 дней
                     <p class="pilates-content__price-text">
-                      <svg class="pilates-content__dollar-icon">
-                        <use xlink:href="img/icons/icons.svg#dollar"></use>
-                      </svg>
-                      9.90
+                      3000 р.
                     </p>
                   </li>
                   <li class="pilates-content__price">
                     <svg class="pilates-content__arrow-icon">
                       <use xlink:href="img/icons/icons.svg#next"></use>
                     </svg>
-                    3 days session 
+                    7 дней
                     <p class="pilates-content__price-text">
-                      <svg class="pilates-content__dollar-icon">
-                        <use xlink:href="img/icons/icons.svg#dollar"></use>
-                      </svg>
-                      9.90
+                      5000 р.
                     </p>
                   </li>
                   <li class="pilates-content__price">
                     <svg class="pilates-content__arrow-icon">
                       <use xlink:href="img/icons/icons.svg#next"></use>
                     </svg>
-                    3 days session 
+                    Месяц
                     <p class="pilates-content__price-text">
-                      <svg class="pilates-content__dollar-icon">
-                        <use xlink:href="img/icons/icons.svg#dollar"></use>
-                      </svg>
-                      9.90
+                      10 000 р.
                     </p>
                   </li>
                 </ul>
@@ -170,55 +156,55 @@
             </div>
           </div>
           <div class="schedule schedule--pilates">
-            <h3 class="schedule__title">Opening Hours</h3>
+            <h3 class="schedule__title">Часы работы</h3>
             <ul class="schedule__list">
               <li class="schedule__day">
                 <svg class="schedule__calendar-icon">
                   <use xlink:href="img/icons/icons.svg#calendar"></use>
                 </svg>
-                <p class="schedule__day-name">Monday</p>
+                <p class="schedule__day-name">Понедельник</p>
                 <p class="schedule__time">6:00 - 24:00</p>
               </li>
               <li class="schedule__day">
                 <svg class="schedule__calendar-icon">
                   <use xlink:href="img/icons/icons.svg#calendar"></use>
                 </svg>
-                <p class="schedule__day-name">Monday</p>
+                <p class="schedule__day-name">Вторник</p>
                 <p class="schedule__time">6:00 - 24:00</p>
               </li>
               <li class="schedule__day">
                 <svg class="schedule__calendar-icon">
                   <use xlink:href="img/icons/icons.svg#calendar"></use>
                 </svg>
-                <p class="schedule__day-name">Monday</p>
+                <p class="schedule__day-name">Среда</p>
                 <p class="schedule__time">6:00 - 24:00</p>
               </li>
               <li class="schedule__day">
                 <svg class="schedule__calendar-icon">
                   <use xlink:href="img/icons/icons.svg#calendar"></use>
                 </svg>
-                <p class="schedule__day-name">Monday</p>
+                <p class="schedule__day-name">Четверг</p>
                 <p class="schedule__time">6:00 - 24:00</p>
               </li>
               <li class="schedule__day">
                 <svg class="schedule__calendar-icon">
                   <use xlink:href="img/icons/icons.svg#calendar"></use>
                 </svg>
-                <p class="schedule__day-name">Monday</p>
+                <p class="schedule__day-name">Пятница</p>
                 <p class="schedule__time">6:00 - 24:00</p>
               </li>
               <li class="schedule__day">
                 <svg class="schedule__calendar-icon">
                   <use xlink:href="img/icons/icons.svg#calendar"></use>
                 </svg>
-                <p class="schedule__day-name">Monday</p>
+                <p class="schedule__day-name">Суббота</p>
                 <p class="schedule__time">6:00 - 24:00</p>
               </li>
               <li class="schedule__day">
                 <svg class="schedule__calendar-icon">
                   <use xlink:href="img/icons/icons.svg#calendar"></use>
                 </svg>
-                <p class="schedule__day-name">Monday</p>
+                <p class="schedule__day-name">Воскресенье</p>
                 <p class="schedule__time">6:00 - 24:00</p>
               </li>
             </ul>
@@ -237,10 +223,10 @@
             <use xlink:href="img/icons/icons.svg#right-quote-sign"></use>
           </svg>
         </div>
-        <p class="about-comment__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+        <p class="about-comment__text">Аэробика однозначно подойдет тем, кто хочет похудеть – она позволяет быстро сбросить лишние килограммы. Помимо этого, вы сможете также подтянуть свое тело – занятия будут актуальны и для худых.</p>
         <p class="about-comment__name">
-          John White
-          <span>CEO - THEUNCREATIVELAB</span>
+          ЖАСМИН ПАТТЕР -
+          <span>Тренер GYM</span>
         </p>
       </div>
     </section>

@@ -116,3 +116,20 @@ tableNavName.forEach((btn, i) => {
     }
   });
 });
+
+// Меню в footer при 768px 
+
+const footerMenuTitle = document.querySelector('.footer__menu-title'),
+  footerMenuList = document.querySelector('.footer__menu-list'), 
+  footerCommunityTitle = document.querySelector('.footer__community-title'),
+  footerCommunityList = document.querySelector('.footer__community-list');
+
+
+ footerMenuTitle.addEventListener('click', () => {
+  footerMenuList.classList.add('display-block')
+ })
+
+  
+
+
+

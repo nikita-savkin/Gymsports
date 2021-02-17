@@ -1,17 +1,22 @@
-.pricing-plans
-  &__wrapper 
-    padding: 60px 0
-  &__title 
-    @extend %main-title
-    text-align: center
-    margin-bottom: 25px 
-  &__blocks 
-    display: flex
-    justify-content: space-between 
+.pricing
+  &-main 
+    .gallery-partner 
+      margin-bottom: 0
+  &-plans
+    &__wrapper 
+      padding: 60px 0
+    &__title 
+      @extend %main-title
+      text-align: center
+      margin-bottom: 25px 
+    &__blocks 
+      display: flex
+      justify-content: space-between 
 
 .pricing-block 
   width: 270px
-  min-height: 27px
+  min-height: 270px
+  height: 100%
   padding: 20px 
   text-align: center
   background-color: $dark 
@@ -23,24 +28,27 @@
     .pricing-block__btn
       border-color: $dark 
       color: $dark
+    .pricing-block__prefs 
+      &:before 
+        background: url("data:image/svg+xml;charset=UTF-8,%3csvg fill='%2300BFF0' viewBox='0 0 515.556 515.556' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 274.226l176.549 176.886L515.556 112.44l-48.67-47.997-290.337 290L47.996 225.891z'/%3e%3c/svg%3e") no-repeat
   &__uppertitle 
     font-size: 20px 
     font-weight: 300
     text-transform: uppercase
-    margin-bottom: 15px 
+    margin-bottom: 20px 
   &__price 
     font-size: 36px 
     text-transform: uppercase
-    margin-bottom: 15px 
+    margin-bottom: 20px 
     span 
       font-size: 20px
       font-style: italic
   &__prefs 
     font-size: 13px 
-    line-height: 30px 
+    margin-bottom: 15px
     word-wrap: break-word
     &:last-child 
-      margin-bottom: 15px
+      margin-bottom: 30px
     &:before 
       content: '' 
       display: inline-block
@@ -49,7 +57,7 @@
       margin-right: 5px
       background: url("data:image/svg+xml;charset=UTF-8,%3csvg fill='%23fff' viewBox='0 0 515.556 515.556' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 274.226l176.549 176.886L515.556 112.44l-48.67-47.997-290.337 290L47.996 225.891z'/%3e%3c/svg%3e") no-repeat
   &__btn 
-    display: block
+    display: inline-block
     padding: 5px 40px 
     border: 1px solid #fff 
     border-radius: 3px
