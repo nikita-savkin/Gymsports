@@ -355,6 +355,8 @@
   background: url(/img/about/about-us_bg.jpg) no-repeat
   background-size: cover
   border-bottom: 10px solid $dark 
+  @include media($land-phone)
+    display: none
   &:before 
     position: absolute
     content: 'О нас'
@@ -369,7 +371,6 @@
   &--classes
     background: url(/img/classes/classes-bg.jpg) no-repeat
     background-size: cover
-    background-position-y: -100px
     &:before 
       content: 'Категории'
   &--timetable 
@@ -399,7 +400,7 @@
   &--pilates-title 
     position: absolute
     bottom: -5px
-    left: 170px
+    left: 10%
     font-size: 30px
     font-weight: 300
     padding: 8px 40px
@@ -417,6 +418,9 @@
   &--aerobics
     background: url(/img/class-single/aerobics-bg.jpg)
     background-size: cover
+  &--cardio, &--crossfit, &--aerobics 
+    &:before 
+      display: none
   &__icon 
     width: 10px 
     height: 10px

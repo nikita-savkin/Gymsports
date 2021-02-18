@@ -4,13 +4,11 @@
     @extend %flex-between
     @include media($desktop) 
       justify-content: space-evenly
+      .from-blog 
+        display: none
     @include media($land-phone)
       flex-direction: column  
       .trainers 
         margin-bottom: 20px
 
 
-.main-index 
-  .from-blog
-    @include media($desktop) 
-      display: none

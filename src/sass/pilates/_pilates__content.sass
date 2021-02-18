@@ -5,8 +5,19 @@
       margin-bottom: 0
   &__blocks
     margin-bottom: 100px
+    @include media($tablet) 
+      margin-bottom: 0
+    &-wrapper 
+      @include media($desktop)
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
   &__prices
     display: inline-block
+    @include media($desktop)  
+      margin-left: 10px
+    @include media($tablet) 
+      display: none 
 
 .schedule--pilates 
   position: static
@@ -14,13 +25,20 @@
   height: 390px
   padding-top: 10px
   margin-bottom: 18px
+  @include media($desktop)  
+    margin-bottom: 0 
+    margin-right: 10px
+  @include media($tablet) 
+    display: none 
 
 .pilates-content
   max-width: 770px
   min-height: 730px 
   background-color: #fff
   float: left
-  margin-right: 30px
+  margin-right: 10px
+  @include media($desktop) 
+    margin-bottom: 50px
   &__img 
     display: block
     height: 300px 
@@ -35,14 +53,28 @@
     display: flex
     justify-content: space-between
     padding: 30px
+    @include media($land-phone) 
+      padding: 10px 30px
+      .trainers__trainer 
+        display: none
+    @include media($port-phone) 
+      flex-direction: column
+      align-items: center
   &__divide 
     width: 1px 
     height: 180px 
     border: none 
     background-color: $light 
+    @include media($port-phone) 
+      display: none
+    &--first 
+      @include media($land-phone)  
+        display: none
   &__featured
     max-width: 200px 
     width: 100%
+    @include media($port-phone)  
+      margin-bottom: 20px
   &__featured-title, &__pricing-title
       font-size: 16px
       font-weight: 600

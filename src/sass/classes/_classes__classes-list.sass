@@ -1,6 +1,12 @@
 .classes
   &__classes-list
-    margin-bottom: 100px;
+    margin-bottom: 100px
+    @include media($tablet) 
+      margin-bottom: 0
     &-wrapper 
       display: flex
       justify-content: space-between
+      @include media($desktop)
+        justify-content: center
+        .from-blog 
+          display: none

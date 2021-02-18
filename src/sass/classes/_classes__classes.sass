@@ -6,6 +6,9 @@
     align-content: space-between
     min-height: 990px
     padding: 85px 0px 
+    @include media($desktop) 
+      flex-direction: column
+      align-content: center
   &__main 
     .gallery-partner 
       margin-bottom: 0
@@ -14,11 +17,17 @@
   display: flex
   max-width: 570px
   min-height: 250px
+  @include media($desktop)  
+    margin-bottom: 15px  
+  @include media($land-phone)
+    min-height: auto  
   &__img 
     display: block
     width: 250px
     height: 250px
     object-fit: cover
+    @include media($port-phone)  
+      display: none
   &__info 
     padding: 10px 20px 
     background-color: $light 
@@ -28,13 +37,15 @@
     font-weight: 300
     text-align: center
     text-transform: uppercase
-    margin-bottom: 5px
+    margin-bottom: 10px
   &__subtitle
     font-size: 11px
     line-height: 14px
     margin-bottom: 15px
   &__trainer
     padding: 0 20px
+    @include media($port-phone) 
+      text-align: center
     &-img 
       width: 80px
       height: 80px
@@ -55,7 +66,15 @@
   &__text 
     font-size: 12px
     font-style: italic
-    margin-bottom: 25px
+    margin-bottom: 35px
+    min-height: 25px
+    @include media($land-phone) 
+      margin-bottom: 20px
+  &__btns
+    display: flex 
+    justify-content: space-between
+    @include media($port-phone)
+      justify-content: space-evenly
   &__btn
     display: inline-block
     padding: 1px 10px
@@ -63,8 +82,7 @@
     font-size: 11px
     text-transform: uppercase
     color: #ffffff
-    &--second 
-      margin-left: 65px
+
 
 .class-block--light 
   .class-block

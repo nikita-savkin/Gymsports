@@ -10,8 +10,11 @@
     margin-bottom: 40px;
   &__navbar 
     @extend %flex-between 
+    flex-wrap: wrap
     width: 850px
     max-width: 100%
+    @include media($tablet)
+      justify-content: center
   &__nav-name 
     padding: 5px 10px 
     font-family: $font-condested
@@ -24,13 +27,19 @@
       color: $hover-color
       border: 1px solid $hover-color
       cursor: pointer
+    @include media($tablet) 
+      margin-right: 10px
+      margin-bottom: 10px
     
 .main-table 
   border-collapse: collapse
   width: 100%
   th, td 
-    padding: 40px 0
-    text-align: center
+    padding: 40px 10px
+    text-align: center 
+  &__wrapper 
+    @include media($tablet)
+      overflow-x: auto
   &__days 
     font-size: 14px 
     text-transform: uppercase
