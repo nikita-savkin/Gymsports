@@ -1,3 +1,13 @@
+// Header hamburger 
+
+const headerHamburger = document.querySelector('.header__hamburger  '), 
+  headerMenu = document.querySelector('.header__navbar'); 
+
+  headerHamburger.addEventListener('click', () => {
+    headerMenu.classList.toggle('display-block');
+  })
+
+
 // Тренеры - карусель
 $('.trainers__slider').slick({
   slidesToShow: 1,
@@ -126,8 +136,14 @@ const footerMenuTitle = document.querySelector('.footer__menu-title'),
 
 
  footerMenuTitle.addEventListener('click', () => {
-  footerMenuList.classList.add('display-block')
+  footerMenuList.classList.toggle('display-block');
+ });
+
+ footerCommunityTitle.addEventListener('click', () => {
+  footerCommunityList.classList.toggle('display-block')
  })
+
+
 
   
 

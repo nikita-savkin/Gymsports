@@ -22,6 +22,8 @@
     transition: 0.3s
     &:hover 
       color: $hover-color
+    @include media($port-phone) 
+      font-size: 10px
   &__link-icon
     width: 18px
     height: 18px
@@ -38,12 +40,26 @@
       min-height: 100px
       padding: 0px 10px
   &__navbar
+    width: 100%
+    @include media($land-phone) 
+      display: none
+      position: relative
     &-list
       display: flex
       flex-wrap: wrap
       align-items: center
-      justify-content: space-between
+      justify-content: flex-end
+      z-index: 50
+      @include media($land-phone)  
+        position: absolute
+        flex-direction: column
+        padding: 5px
+        top: 55px
+        right: -50px
+        background-color: rgba($light, 0.8) 
+        border-radius: 3px
   &__button-link 
+    display: block
     border: 1px solid transparent
     @include media($desktop)
       padding: 10px 25px
@@ -52,6 +68,7 @@
     &:hover 
       border: 1px solid #fff
     &-classes
+      display: flex
       transition: 0.4s
       &::before
        content: ''
@@ -84,6 +101,10 @@
     border-radius: 5px
     background-color: #fff
     z-index: 100 
+    @include media($land-phone)
+      left: auto 
+      right: 120px
+      top: 0
     &-navbar
       position: relative
       &::after
@@ -93,6 +114,12 @@
         left: -5px
         width: 200px
         height: 25px
+        @include media($land-phone)
+          width: 25px 
+          height: 130px
+          top: -10px
+          left: auto
+          right: -15px
       &::before
         position: absolute
         content: ''
@@ -100,6 +127,12 @@
         left: 20px
         border: 10px solid transparent
         border-bottom: 10px solid #fff
+        @include media($land-phone) 
+          top: 5px
+          left: auto 
+          right: -20px
+          border-bottom: 10px solid transparent
+          border-left: 10px solid #fff
     &-nav-link
       display: block
       padding: 10px 10px
@@ -126,9 +159,22 @@
   
 .logo
   display: block
-  width: 128px
+  min-width: 128px
 
 .links
   display: flex
   justify-content: space-between
   min-width: 200px
+
+.header__hamburger  
+  display: none 
+  flex-direction: column
+  justify-content: space-between
+  height: 25px 
+  cursor: pointer
+  @include media($land-phone)
+    display: flex
+  &-line 
+    width: 30px 
+    height: 5px
+    background-color: #fff

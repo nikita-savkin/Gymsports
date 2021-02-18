@@ -2,11 +2,19 @@
   background-color: $dark 
   &__wrapper 
     @extend %flex-between 
-    padding: 70px 100px 
+    padding: 40px 90px 
+    @include media($port-phone)  
+      padding: 20px
   &__img 
+    display: block
     width: 370px
     height: 200px   
     object-fit: cover
+    margin-right: 30px
+    @include media($tablet) 
+      width: 300px
+    @include media($land-phone) 
+      display: none 
   &__info
     width: 500px
     text-align: center
@@ -15,10 +23,14 @@
     font-size: 38px
     font-weight: 300
     margin-bottom: 12px
+    @include media($tablet) 
+      font-size: 25px 
   &__subtitle
     font-size: 16px
     font-weight: 300
     margin-bottom: 12px
+    @include media($tablet) 
+      font-size: 12px 
   &__name 
     font-size: 14px 
     font-weight: 600

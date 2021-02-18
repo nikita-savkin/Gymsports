@@ -1,6 +1,8 @@
 .main
   background-color: #f3f3f3
   &__title
+    @include media($land-phone) 
+      margin-bottom: 10px
     &-wrapper
       min-height: 215px
       display: flex
@@ -15,6 +17,8 @@
       @include media($desktop)
         min-width: 250px
         margin-right: 20px
+      @include media($port-phone) 
+        display: none
     &-img
       display: block
     &-text 
@@ -25,8 +29,12 @@
       font-weight: 600
       color: #505961
       margin-bottom: 12px
+      @include media($land-phone) 
+        font-size: 30px 
     &-subtitle 
       font-size: 16px
       font-weight: 400
       color: #8b9297
       line-height: 24px
+      @include media($land-phone)  
+        font-size: 13px

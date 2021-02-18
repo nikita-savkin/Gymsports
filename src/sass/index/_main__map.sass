@@ -7,11 +7,14 @@
     border: none
     &--contacts 
       height: 400px
+  @include media($land-phone)
+    .schedule 
+      display: none
 
 .schedule 
   position: absolute
   top: 0
-  right: 150px
+  right: 5%
   width: 370px
   height: 500px
   padding: 25px 25px

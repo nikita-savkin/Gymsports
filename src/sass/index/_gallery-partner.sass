@@ -11,6 +11,10 @@
     width: 770px
     @include media($desktop) 
       margin-bottom: 30px
+    @include media($tablet)
+      width: 600px 
+    @include media($port-phone)
+      display: none
     &-title
       @extend %main-title 
       text-align: center
@@ -21,10 +25,15 @@
       display: flex !important
       flex-wrap: wrap 
       justify-content: space-between 
+      @include media($tablet) 
+        min-height: 580px
+        justify-content: space-evenly
   &__partner 
     width: 256px
     @include media($desktop)  
       width: 400px
+    @include media($port-phone) 
+      width: 100%
     &-title
       @extend %main-title 
       text-align: center

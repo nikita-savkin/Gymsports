@@ -68,6 +68,10 @@
   @include media($tablet) 
     margin-right: 0 
     margin-bottom: 80px 
+  @include media($land-phone) 
+    width: 550px
+  @include media($port-phone) 
+    width: 100%
   &__title 
     @extend %main-title
     color: $title-color
@@ -77,6 +81,8 @@
     min-height: 250px
     padding: 16px 32px
     background-color: $light
+    @include media($land-phone)  
+      padding: 16px 20px
     &:before 
       position: absolute 
       content: ''
@@ -85,10 +91,14 @@
       width: 1px 
       height: 180px 
       background-color: rgba(#fff, 0.6)
+      @include media($port-phone)  
+        display: none
   &__list 
     display: flex
     flex-wrap: wrap
     justify-content: space-between
+    @include media($port-phone)  
+      flex-direction: column
   &__class 
     display: flex
     justify-content: space-between
@@ -101,12 +111,18 @@
     color: #fff
     &:nth-child(7), &:nth-child(8)
       margin-bottom: 0px
+    @include media($port-phone)   
+      width: 100%
+      &:nth-child(7) 
+        margin-bottom: 27px
   &__name 
     display: flex
     align-items: center
   &__text 
     font-size: 14px
     text-transform: uppercase
+    @include media($land-phone)  
+      font-size: 12px
   &__links 
     min-width: 120px
     @extend %flex-between
@@ -343,7 +359,7 @@
     position: absolute
     content: 'О нас'
     bottom: -5px
-    left: 170px
+    left: 10%
     font-size: 30px
     font-weight: 300
     padding: 8px 40px
@@ -409,13 +425,24 @@
 .join 
   background-color: $dark
   margin-bottom: 100px
+  @include media($tablet) 
+    margin-bottom: 30px
   &__wrapper
     display: flex
+    align-items: center
+    justify-content: space-between
     padding: 34px 100px 34px 0
+    @include media($tablet) 
+      padding: 34px 0
+    @include media($land-phone) 
+      flex-direction: column 
   &__join 
+    height: 100%
     max-width: 560px
     text-align: center
     color: #fff 
+    @include media($land-phone) 
+      margin-bottom: 30px
     &-title 
       font-size: 30px
       font-weight: 600
@@ -425,6 +452,8 @@
       font-size: 24px
       font-weight: 600
       margin-bottom: 20px
+      @include media($tablet) 
+        font-size: 20px
     &-text 
       font-size: 14px 
       line-height: 21px
@@ -444,6 +473,9 @@
     height: 180px
     border: none 
     background-color: rgba(#fff, 0.5)
+    margin: 0 10px
+    @include media($land-phone) 
+      display: none
   &__member 
     max-width: 370px
     text-align: center
@@ -456,6 +488,8 @@
       font-size: 24px 
       font-weight: 600 
       margin-bottom: 20px 
+      @include media($tablet) 
+        font-size: 20px
     &-text 
       font-size: 14px 
       line-height: 21px 
@@ -471,6 +505,8 @@
       border-radius: 3px
       color: $light
       background-color: #fff
+      @include media($tablet)
+        width: 100px
       &--calendar 
         margin-left: 37px
         color: #fff 
