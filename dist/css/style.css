@@ -645,7 +645,7 @@ img {
 .underheader-bg {
   min-height: 300px;
   position: relative;
-  background: url(/img/about/about-us_bg.jpg) no-repeat;
+  background: url(../img/about/about-us_bg.jpg) no-repeat;
   background-size: cover;
   border-bottom: 10px solid #00BFF0;
 }
@@ -670,7 +670,7 @@ img {
 }
 
 .underheader-bg--classes {
-  background: url(/img/classes/classes-bg.jpg) no-repeat;
+  background: url(../img/classes/classes-bg.jpg) no-repeat;
   background-size: cover;
 }
 
@@ -679,7 +679,7 @@ img {
 }
 
 .underheader-bg--timetable {
-  background: url(/img/timetable/timetable-bg.jpg);
+  background: url(../img/timetable/timetable-bg.jpg);
   background-size: cover;
 }
 
@@ -688,7 +688,7 @@ img {
 }
 
 .underheader-bg--pricing {
-  background: url(/img/pricing/pricing-bg.jpg);
+  background: url(../img/pricing/pricing-bg.jpg);
   background-size: cover;
 }
 
@@ -705,7 +705,7 @@ img {
 }
 
 .underheader-bg--blog {
-  background: url(/img/blog/blog-bg.jpg) no-repeat;
+  background: url(../img/blog/blog-bg.jpg) no-repeat;
   background-size: cover;
 }
 
@@ -714,7 +714,7 @@ img {
 }
 
 .underheader-bg--pilates {
-  background: url(/img/class-single/pilates-bg.jpg);
+  background: url(../img/class-single/pilates-bg.jpg);
   background-size: cover;
 }
 
@@ -739,17 +739,17 @@ img {
 }
 
 .underheader-bg--cardio {
-  background: url(/img/class-single/cardio-bg.jpg);
+  background: url(../img/class-single/cardio-bg.jpg);
   background-size: cover;
 }
 
 .underheader-bg--crossfit {
-  background: url(/img/class-single/crossfit-bg.jpg);
+  background: url(../img/class-single/crossfit-bg.jpg);
   background-size: cover;
 }
 
 .underheader-bg--aerobics {
-  background: url(/img/class-single/aerobics-bg.jpg);
+  background: url(../img/class-single/aerobics-bg.jpg);
   background-size: cover;
 }
 
