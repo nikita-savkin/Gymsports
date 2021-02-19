@@ -5,26 +5,45 @@
 .contact-content
   min-height: 500px
   margin-bottom: 100px
+  @include media($tablet) 
+    margin-bottom: 50px
+  &__wrapper 
+    @include media($desktop) 
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    .from-blog 
+      display: none
   &__events, &__from-blog
     display: inline-block
     vertical-align: top
   &__events 
     margin-right: 24px
+    @include media(840px) 
+      margin-right: 0
 
 .schedule--contact 
   position: static
   float: left
   margin-right: 30px
-  
+  @include media(840px)
+    margin-bottom: 30px 
+    margin-right: 0
+
 .join__join--contact 
   display: inline-flex
   justify-content: space-between
   min-height: 100px
   max-width: 770px
   width: 100%
-  padding: 10px 20px 5px
+  padding: 10px 20px 
   margin-top: 50px
   background-color: $dark
+  @include media($land-phone)
+    display: flex
+    align-items: center
+    flex-direction: column
   .join__join
     &-info 
       display: flex
@@ -32,6 +51,8 @@
       justify-content: space-evenly
       flex-wrap: wrap
       max-width: 420px
+      @include media($tablet) 
+        margin-right: 10px
     &-title 
       font-size: 26px
       margin-bottom: 10px
@@ -41,7 +62,12 @@
     &-text 
       font-size: 13px
       line-height: 14px
+      @include media($land-phone) 
+        margin-bottom: 15px
     &-btn 
       align-self: center
+      @include media($land-phone)
+        padding: 12px 50px  
+        
 
     

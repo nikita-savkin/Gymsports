@@ -2,4 +2,11 @@
   margin-bottom: 100px
   &__wrapper 
     @extend %flex-between
+    @include media($tablet)
+      justify-content: center
+      .all-classes 
+        margin-bottom: 0
+      .from-blog 
+        display: none
+
     

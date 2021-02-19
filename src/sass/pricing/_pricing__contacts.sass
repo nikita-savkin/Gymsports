@@ -1,12 +1,21 @@
 .contacts 
   background-color: #e6e6e6
   margin-bottom: 100px 
+  @include media($port-phone) 
+    margin-bottom: 50px
   &__wrapper
     @extend %flex-between
     padding: 0 20px 
     min-height: 200px
+    @include media($port-phone) 
+      flex-direction: column
+      justify-content: center
   &__text 
     color: $dark 
+    margin-right: 20px
+    @include media($port-phone) 
+      text-align: center
+      margin-bottom: 15px
   &__title 
     font-size: 30px 
     font-weight: 600
@@ -17,4 +26,8 @@
     display: block
     padding: 10px 30px 
     background-color: #ff0000
+    font-size: 20px
     color: #fff
+    white-space: nowrap
+    @include media($port-phone)
+      font-size: 15px

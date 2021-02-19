@@ -38,7 +38,9 @@
       align-items: center
       justify-content: space-between
       min-height: 100px
-      padding: 0px 10px
+      padding: 0 10px
+      @include media($land-phone) 
+        min-height: 80px
   &__navbar
     width: 100%
     @include media($land-phone) 
@@ -70,6 +72,7 @@
     &-classes
       display: flex
       transition: 0.4s
+      cursor: pointer
       &::before
        content: ''
        display: inline-block

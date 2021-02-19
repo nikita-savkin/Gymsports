@@ -13,17 +13,22 @@
       width: 45%
     @include media($port-phone) 
       width: 100%
-      margin-bottom: 15px
+      margin-bottom: 30px
+      order: 2
     &-title 
       font-size: 18px
       text-transform: uppercase
       color: #fff  
       margin-bottom: 30px
+      @include media($port-phone) 
+        margin-bottom: 10px 
     &-subtitle 
       font-size: 14px
       text-transform: uppercase
       color: #fff 
       margin-bottom: 15px
+      @include media($tablet)  
+        font-size: 12px
   &__input
     width: 80%
     padding: 6px 20px
@@ -47,6 +52,8 @@
       height: 10px
       margin-left: 8px
       fill: #fff
+    @include media($tablet) 
+      font-size: 10px
   &__logo
     width: 100px
     margin-bottom: 22px
@@ -55,8 +62,11 @@
     width: 40%
     @include media($land-phone)  
       width: 45%
+      margin-bottom: 30px
     @include media($port-phone) 
       width: 100%
+      margin-bottom: 20px
+      order: 1
     &-text 
       font-size: 13px
       line-height: 23px 
@@ -66,14 +76,22 @@
     font-size: 13px 
     color: #fff 
     margin-bottom: 14px
+    @include media($port-phone)  
+      text-align: center
     &-link 
       font-size: 20px
       font-style: italic
       padding-left: 10px
       color: #fff
+      @include media($land-phone)  
+        font-size: 18px
   &__menu 
     @include media($land-phone)  
       margin-bottom: 15px
+      order: 3
+  &__community 
+    @include media($land-phone) 
+      order: 4
   &__menu, &__community
     @include media($land-phone) 
       width: 100%

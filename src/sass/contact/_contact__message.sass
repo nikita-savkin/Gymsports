@@ -1,19 +1,35 @@
 .contact-info 
   margin-bottom: 100px
   background-color: $dark
+  @include media($tablet)
+    margin-bottom: 50px 
   &__wrapper
     display: flex
-    justify-content: space-between 
+    justify-content: space-around
     padding: 55px 0
+    @include media($tablet) 
+      justify-content: center
+      padding: 55px 20px
+    @include media($port-phone)
+      flex-direction: column
+      
     
 .message 
-  width: 675px
+  max-width: 675px
+  width: 100%
   color: #fff  
+  @include media($desktop) 
+    margin-right: 15px
+  @include media(1050px)  
+    max-width: 500px
+  @include media($port-phone)
+    margin-bottom: 20px  
+    margin-right: 0
   &__title 
     font-size: 14px
     font-weight: 300
     text-transform: uppercase
-    margin-bottom: 5px
+    margin-bottom: 5px 
   &__subtitle 
     font-size: 14px
     margin-bottom: 15px
@@ -43,6 +59,9 @@
     color: #fff
     border: none
     outline: none
+    @include media(1050px) 
+      margin-bottom: 15px 
+      height: 100px
   &__btn 
     @extend %flex-center
     width: 212px 
@@ -59,13 +78,16 @@
     font-weight: 300
 
 .info 
-  width: 370px
+  max-width: 370px
+  width: 100%
   color: #fff
   &__title 
-    font-size: 14px 
-    font-weight: 300
+    font-size: 15px 
+    font-weight: 600
     text-transform: uppercase
     margin-bottom: 35px 
+    @include media($port-phone)
+      margin-bottom: 12px 
   &__text 
     font-size: 12px 
     line-height: 21px 
