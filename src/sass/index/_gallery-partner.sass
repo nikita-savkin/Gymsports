@@ -63,16 +63,16 @@
     z-index: 100
     background-color: rgba(#5e5e5e, 0.3)
     img 
-      width: 1000px
+      max-width: 1000px
+      width: 100%
+      padding: 0 20px
       animation: modal-animation 0.5s
-      transform-origin: center
 
 @keyframes modal-animation
   0%
-    width: 0
+    transform: scale(0)
   100%
-    width: 1000px
-
+    transform: scale(1)
 
 
 
