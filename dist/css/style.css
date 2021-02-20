@@ -635,6 +635,7 @@ img {
 .from-blog__text {
   font-size: 13px;
   color: #fff;
+  margin-bottom: 10px;
 }
 
 .from-blog__date {
