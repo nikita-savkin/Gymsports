@@ -1700,29 +1700,32 @@ img {
 }
 
 .carousel-img-modal img {
-  width: 1000px;
+  max-width: 1000px;
+  width: 100%;
+  padding: 0 20px;
   -webkit-animation: modal-animation 0.5s;
           animation: modal-animation 0.5s;
-  -webkit-transform-origin: center;
-      -ms-transform-origin: center;
-          transform-origin: center;
 }
 
 @-webkit-keyframes modal-animation {
   0% {
-    width: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
   100% {
-    width: 1000px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
 @keyframes modal-animation {
   0% {
-    width: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
   }
   100% {
-    width: 1000px;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -3151,7 +3154,7 @@ img {
   max-width: 770px;
   width: 100%;
   padding: 10px 20px;
-  margin-top: 50px;
+  margin-top: 45px;
   background-color: #00BFF0;
 }
 
@@ -3275,7 +3278,7 @@ img {
   display: inline-block;
   height: 390px;
   padding-top: 10px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 1200px) {
@@ -3293,7 +3296,7 @@ img {
 
 .pilates-content {
   max-width: 770px;
-  min-height: 730px;
+  min-height: 720px;
   background-color: #fff;
   float: left;
   margin-right: 10px;
@@ -3318,7 +3321,6 @@ img {
   font-size: 14px;
   line-height: 22px;
   padding: 30px;
-  margin-bottom: 10px;
 }
 
 .pilates-content__info {
