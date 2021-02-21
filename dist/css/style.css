@@ -422,7 +422,7 @@ img {
 .trainers__block {
   width: 100%;
   min-height: 250px;
-  padding: 20px 30px 25px;
+  padding: 20px 30px;
   background-color: #fff;
 }
 
@@ -442,7 +442,6 @@ img {
 .trainers__trainer {
   position: relative;
   width: 160px;
-  min-height: 128px;
   padding: 0 10px;
   text-align: center;
 }
@@ -462,6 +461,7 @@ img {
   font-weight: 600;
   text-transform: uppercase;
   color: #72D0F4;
+  margin-bottom: 5px;
 }
 
 .trainers__spec {
@@ -476,7 +476,7 @@ img {
   font-size: 12px;
   font-style: italic;
   color: #606060;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
 .trainers__icons {
@@ -505,7 +505,7 @@ img {
 }
 
 .trainers__icon-like {
-  margin-right: 3px;
+  margin-right: 5px;
 }
 
 .events {
@@ -542,6 +542,7 @@ img {
   font-weight: 600;
   text-transform: uppercase;
   color: #fff;
+  margin-bottom: 3px;
 }
 
 .events__img {
@@ -3934,4 +3935,47 @@ img {
 
 .background-white {
   background-color: #fff;
+}
+
+.red-color-fill {
+  fill: #ff0000;
+}
+
+.blue-color-fill {
+  fill: #2B0DDE;
+}
+
+.trainer-icon-anim {
+  -webkit-animation: trainer-icon-scale 0.8s;
+          animation: trainer-icon-scale 0.8s;
+}
+
+@-webkit-keyframes trainer-icon-scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes trainer-icon-scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
