@@ -8,7 +8,7 @@ const headerHamburger = document.querySelector('.header__hamburger  '),
   })
 
 
-// Тренеры - карусель
+// Тrainers - carousel
 $('.trainers__slider').slick({
   slidesToShow: 1,
   autoplay: true,
@@ -17,6 +17,24 @@ $('.trainers__slider').slick({
   nextArrow: '<button type="button" class="slick-next slick-arrow__trainers slick-next__trainers"></button>'
 });
 
+// Trainers - icons-color
+
+const trainerIconLike = document.querySelectorAll('.trainers__icon-like'), 
+  trainerIconThumb = document.querySelectorAll('.trainers__icon-thumb');
+
+  trainerIconLike.forEach(item => {
+    item.addEventListener('click', () => {
+      item.classList.add('red-color-fill', 'trainer-icon-anim');
+    });
+  });
+
+  trainerIconThumb.forEach(item => {
+    item.addEventListener('click', () => {
+      item.classList.add('blue-color-fill', 'trainer-icon-anim');
+    });
+  });
+
+  
 // Галерея - карусель
 $('.gallery-partner__carousel').slick({
   slidesToShow: 1,
