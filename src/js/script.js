@@ -1,11 +1,22 @@
+'use strict';
+
 // Header hamburger 
-
 const headerHamburger = document.querySelector('.header__hamburger  '), 
-  headerMenu = document.querySelector('.header__navbar'); 
+  headerMenu = document.querySelector('.header__navbar'),
+  trainerIconLike = document.querySelectorAll('.trainers__icon-like'), 
+  trainerIconThumb = document.querySelectorAll('.trainers__icon-thumb'),
+  carouselImg = document.querySelectorAll('.carousel-img'),
+  carouselImgModal = document.querySelectorAll('.carousel-img-modal'),
+  classNameTable = document.querySelectorAll('.main-table__name td'),
+  tableNavName = document.querySelectorAll('.table__nav-name'),
+  mainTableClassName = document.querySelectorAll('.main-table__name td:not(.main-table__time)'),
+  footerMenuTitle = document.querySelector('.footer__menu-title'),
+  footerMenuList = document.querySelector('.footer__menu-list'), 
+  footerCommunityTitle = document.querySelector('.footer__community-title'),
+  footerCommunityList = document.querySelector('.footer__community-list');
 
-  headerHamburger.addEventListener('click', () => {
-    headerMenu.classList.toggle('display-block');
-  })
+//Open menu
+headerHamburger.addEventListener('click', () => headerMenu.classList.toggle('display-block'))
 
 
 // Тrainers - carousel
@@ -17,25 +28,22 @@ $('.trainers__slider').slick({
   nextArrow: '<button type="button" class="slick-next slick-arrow__trainers slick-next__trainers"></button>'
 });
 
+
 // Trainers - icons-color
-
-const trainerIconLike = document.querySelectorAll('.trainers__icon-like'), 
-  trainerIconThumb = document.querySelectorAll('.trainers__icon-thumb');
-
-  trainerIconLike.forEach(item => {
-    item.addEventListener('click', () => {
-      item.classList.add('red-color-fill', 'trainer-icon-anim');
-    });
+trainerIconLike.forEach(item => {
+  item.addEventListener('click', () => {
+    item.classList.add('red-color-fill', 'trainer-icon-anim');
   });
+});
 
-  trainerIconThumb.forEach(item => {
-    item.addEventListener('click', () => {
-      item.classList.add('blue-color-fill', 'trainer-icon-anim');
-    });
+trainerIconThumb.forEach(item => {
+  item.addEventListener('click', () => {
+    item.classList.add('blue-color-fill', 'trainer-icon-anim');
   });
+});
 
   
-// Галерея - карусель
+// Gallery carousel
 $('.gallery-partner__carousel').slick({
   slidesToShow: 1,
   autoplay: true,
@@ -45,77 +53,61 @@ $('.gallery-partner__carousel').slick({
   nextArrow: '<button type="button" class="slick-next slick-arrow__gallery slick-next__gallery"></button>'
 });
 
-// Галерея -  открыть картинку 
 
-const carouselImg = document.querySelectorAll('.carousel-img'),
-  carouselImgModal = document.querySelectorAll('.carousel-img-modal');
-
+// Gallery, open image
 carouselImg.forEach((img, i) => {
-
   img.addEventListener('click', () => {
     carouselImgModal.forEach((modal) => {
-      modal.classList.remove('display-flex')
-    })
+      modal.classList.remove('display-flex');
+    });
     
-    carouselImgModal[i].classList.add('display-flex')
-  }) 
+    carouselImgModal[i].classList.add('display-flex');
+  });
 })
 
 carouselImgModal.forEach((modal) => {
   modal.addEventListener('click', () => {
-    modal.classList.remove('display-flex')
-  })
+    modal.classList.remove('display-flex');
+  });
 })
 
-//Цвета для таблицы
-
-const classNameTable = document.querySelectorAll('.main-table__name td');
-
+//Class names colors
 classNameTable.forEach(item => {
+  const className = (name) => {
+    return item.textContent.toLowerCase().includes(name)
+  };
 
-  let aerobics = item.textContent.includes('Аэробика'),
-    pilates = item.textContent.includes('Пилатес'),
-    kikboxing = item.textContent.includes('Кикбоксинг'),
-    boxing = item.textContent.includes('Бокс'),
-    crossfit = item.textContent.includes('Кроссфит'),
-    spinning = item.textContent.includes('Спиннинг');
-
-  if (aerobics) {
+  if (className('аэробика')) {
     item.classList.add('red-color');
-  } else if (pilates) {
+  } else if (className('пилатес')) {
     item.classList.add('purpur-color');
-  } else if (kikboxing) {
+  } else if (className('кикбоксинг')) {
     item.classList.add('blue-color');
-  } else if (boxing) {
+  } else if (className('бокс')) {
     item.classList.add('light-green');
-  } else if (crossfit) {
+  } else if (className('кроссфит')) {
     item.classList.add('green-color');
-  } else if (spinning) {
+  } else if (className('спиннинг')) {
     item.classList.add('black-color');
   }
 });
 
-//Фильтр для таблицы
 
-const tableNavName = document.querySelectorAll('.table__nav-name'),
-  mainTableClassName = document.querySelectorAll('.main-table__name td:not(.main-table__time)');
-
-function changeContentTable(classNameStandart, classNameUpper) {
+//Table filter
+const changeContentTable = (className) => {
   mainTableClassName.forEach(item => {
-
     item.classList.remove('no-color');
     item.style.backgroundColor = "rgba(114, 208, 244, 0.1)";
 
-    if (!item.textContent.includes(classNameStandart) || item.textContent.includes(classNameUpper)) {
+
+    if(!item.textContent.includes(className)) {
       item.classList.add('no-color');
     }
   });
 }
 
 tableNavName.forEach((btn, i) => {
-
   btn.addEventListener('click', () => {
-
     switch (i) {
       case 0:
         mainTableClassName.forEach(item => {
@@ -124,42 +116,30 @@ tableNavName.forEach((btn, i) => {
         });
         break;
       case 1:
-        changeContentTable('Аэробика', 'АЭРОБИКА');
+        changeContentTable('Аэробика');
         break;
       case 2:
-        changeContentTable('Кроссфит', 'КРОССФИТ');
+        changeContentTable('Кроссфит');
         break;
       case 3:
-        changeContentTable('Бокс', 'БОКС');
+        changeContentTable('Бокс');
         break;
       case 4:
-        changeContentTable('Кикбоксинг', 'КИКБОКСИНГ');
+        changeContentTable('Кикбоксинг');
         break;
       case 5:
-        changeContentTable('Пилатес', 'ПИЛАТЕС');
+        changeContentTable('Пилатес');
         break;
       case 6:
-        changeContentTable('Спиннинг', 'СПИННИНГ');
+        changeContentTable('Спиннинг');
         break;
     }
   });
 });
 
-// Меню в footer при 768px 
-
-const footerMenuTitle = document.querySelector('.footer__menu-title'),
-  footerMenuList = document.querySelector('.footer__menu-list'), 
-  footerCommunityTitle = document.querySelector('.footer__community-title'),
-  footerCommunityList = document.querySelector('.footer__community-list');
-
-
- footerMenuTitle.addEventListener('click', () => {
-  footerMenuList.classList.toggle('display-block');
- });
-
- footerCommunityTitle.addEventListener('click', () => {
-  footerCommunityList.classList.toggle('display-block')
- })
+//Footer menu (768px)
+footerMenuTitle.addEventListener('click', () => footerMenuList.classList.toggle('display-block'));
+footerCommunityTitle.addEventListener('click', () => footerCommunityList.classList.toggle('display-block'));
 
 
 
