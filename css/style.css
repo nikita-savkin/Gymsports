@@ -116,7 +116,7 @@ img {
 }
 
 .liveroom {
-  max-width: 370px;
+  width: 370px;
   min-height: 250px;
   border-bottom: 4px solid #00BFF0;
 }
